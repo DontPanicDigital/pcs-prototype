@@ -1,0 +1,19 @@
+.jquery-checkbox       {display: inline; margin-top: -2px; cursor: pointer; cursor: pointer; float: left;}
+.jquery-checkbox .mark {display: inline;}
+
+.jquery-checkbox + label {
+    width: auto;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.jquery-checkbox img {vertical-align: middle; width: 17px; height: 14px;}
+.jquery-checkbox img{background: transparent url("../images/checkbox.png") no-repeat;}
+
+.jquery-checkbox img{
+	background-position: left top;
+}
+
+.jquery-checkbox-checked img{
+	background-position: left bottom;
+}

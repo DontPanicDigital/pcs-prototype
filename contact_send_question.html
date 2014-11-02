@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Don't Panic, s.r.o.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+    <script type="text/javascript" src="js/control.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" media="screen" href="css/default.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.checkbox.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
+    <script type="text/javascript" src="js/respond.js"></script>
+
+    <title>Poslat dotaz | Flexi pojištění</title>
+
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" media="screen" href="css/ie.css" />
+    <![endif]-->
+</head>
+
+<body class="subPage">
+    <div id="main">
+        <div id="mainIn">
+            <div id="header">
+                <div class="container">
+                    <h1 id="logo">
+                        <a href="/prototyp/" title="flexi životní pojištění">
+                            <img src="images/logo.jpg" alt="logo" />
+                            <span>flexi životní pojištění</span>
+                        </a>
+                    </h1>
+                    <a href="http://www.pojistovnacs.cz/" id="pcsLogo" title="Pojišťovna České spořitelny" target="_blank"><img src="images/PCSlogo.jpg" alt="PCS" /></a>
+
+                    <div id="headerLogin">
+                        <ul>
+                            <li>
+                                <form action="/search" method="post">
+                                    <input type="text" name="search" />
+                                    <input type="submit" name="submit" id="submit" value="Najít" />
+                                </form>
+                            </li>
+                            <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
+                            <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+                        </ul>
+                    </div> <!-- /headerLogin -->
+
+                    <div class="cleaner">&nbsp;</div>
+                    <div id="headerPhone">956 777 222</div>
+
+                    <!----- MENU ----->
+                    <div id="menuHolder">
+                        
+                    </div> <!-- /menuHolder -->
+                    <!----- /MENU ----->
+
+                </div> <!-- /container -->
+            </div> <!-- /header -->
+
+            <div id="content" class="client pt40">
+                <div class="container basicPadding">
+                    <div id="breadcrumb">
+                        <ul>
+                            <li><a href="/prototyp/">úvod</a>&gt;</li>
+                            <li><a href="/prototyp/">kontakt</a>&gt;</li>
+                            <li>poslat dotaz</li>
+                        </ul>
+                    </div>
+
+                    <div class="cleaner">&nbsp;</div>
+
+                    <h2 class="red mt50 mb40">Poslat dotaz</h2>
+
+                    <form method="post" action="/send">
+                        <div class="formRow">
+                            <label for="name">Jméno a příjmení</label>
+                            <input type="text" name="name" id="name" />
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="number">Číslo pojistné smlouvy</label>
+                            <input type="text" name="number" id="number" />
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="email"><strong>Email *</strong></label>
+                            <input type="text" name="email" id="email" />
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="phone">Telefon</label>
+                            <input type="text" name="phone" id="phone" />
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="formRow">
+                            <label for="message"><strong>Dotaz *</strong></label>
+                            <textarea name="message" id="message" rows="10" cols="50"></textarea>
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit" name="sendSubmit" id="sendSubmit" class="mainButton small" value="Odeslat dotaz" />
+                        </div>
+                    </form>
+
+                </div> <!-- /container -->
+
+                <div class="cleaner">&nbsp;</div>
+            </div> <!-- /content -->
+
+
+            <div id="footer">
+                <div class="container basicPadding">
+                    <div class="col-half logos">
+                        <a href="http://www.pojistovnacs.cz/" title="Pojišťovna České spořitelny" class="footerLogo" target="_blank"><img src="images/PCSlogoFooter.jpg" alt="PCS" /></a>
+                        <a href="http://www.pojistovnacs.cz/media/vig/" title="Vienna Insurance Group" target="_blank"><img src="images/VIGlogo.jpg" alt="VIG" /></a>
+                    </div>
+
+                    <div class="col-half footerInfo colPadding">
+                        <ul>
+                            <li><span>Klientská linka:</span> 956 777 222</li>
+                            <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
+                        </ul>
+
+                        <div class="socials">
+                            <a href="/prototyp/#" class="fb">Facebook</a>
+                            <a href="/prototyp/#" class="tw">Twitter</a>
+                            <a href="/prototyp/#" class="play">Play</a>
+                        </div>
+                    </div>
+                    <div class="cleaner">&nbsp;</div>
+
+                    <div class="footerDivider">&nbsp;</div>
+
+                    <div id="footerMenu">
+                        <div class="col-half twoColumn">
+                            <ul>
+                                <li class="footerMenuTitle">Pro partnery</li>
+                                <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
+                                <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
+                            </ul>
+
+                            <ul class="last">
+                                <li class="footerMenuTitle">Obecné infromace</li>
+                                <li><a href="/prototyp/#">Prohlášení o přístupnosti</a></li>
+                                <li><a href="/prototyp/#">Informace o webu</a></li>
+                                <li><a href="/prototyp/#">Mapa stránek</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col-half colPadding oneColumn">
+                            <ul class="last">
+                                <li class="footerMenuTitle">Co je nového</li>
+                                <li><a href="/prototyp/#">Běh s FLEXI pro Paraple v neděli na Letné</a></li>
+                                <li><a href="/prototyp/#">Novinky e-mailem</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="cleaner">&nbsp;</div>
+                    </div>
+
+                    <span class="copy">© Pojišťovna České spořitelny, a.s., Vienna Insurance Group</span>
+                </div> <!-- /container -->
+            </div> <!-- /footer -->
+        </div> <!-- /mainIn -->
+    </div> <!-- /main -->
+</body>
+</html>
