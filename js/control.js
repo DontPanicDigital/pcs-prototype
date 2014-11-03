@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $("#menuHolder").load("menu.html");
-    submenuHover();
     fixedButton();
     hoverImage();
+    accessibleDropDown();
 
     $( ".firstTable" ).click(function() {
         $('#divAlokace1').toggle();
@@ -27,6 +27,28 @@ $(document).ready(function() {
         speed: 1000
     });
 });
+
+function accessibleDropDown() {
+
+    var el = $('.nav');
+    $(".nav li a").attr("tabindex", "1");
+
+    $("li", el).mouseover(function() {
+        $(this).addClass("hover");
+        $(this).find( ".hasSubmenu" ).addClass("hoverItem");
+    }).mouseout(function() {
+        $(this).removeClass("hover");
+        $(this).find( ".hasSubmenu" ).removeClass("hoverItem");
+    });
+
+    $("a", el).focus(function() {
+        $(this).parents("li").addClass("hover");
+        $(this).parents("li").find(".hasSubmenu" ).addClass("hoverItem");
+    }).blur(function() {
+        $(this).parents("li").removeClass("hover");
+        $(this).parents("li").find(".hasSubmenu" ).removeClass("hoverItem");
+    });
+}
 
 function hoverImage() {
     $('#needsNavigation .needBox').on({
@@ -57,7 +79,7 @@ function fixedButton() {
     }
 }
 
-function submenuHover() {
+/*function submenuHover() {
     $("#menu li").on({
         mouseenter: function () {
         $(this).children(".subMenu").stop().slideDown('fast');
@@ -68,4 +90,4 @@ function submenuHover() {
         $(this).find( ".hasSubmenu" ).removeClass("hoverItem");
         }
     });
-}
+}*/

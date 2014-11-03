@@ -344,7 +344,7 @@ h4 {
     box-shadow:         0px 22px 11px -21px rgba(0,0,0,1);
     z-index: 400;
 
-    #menu {
+    #nav {
       background: #0e75c5; /* Old browsers */
       background: -moz-linear-gradient(top,  #0e75c5 0%, #096bbf 50%, #0860b6 100%); /* FF3.6+ */
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0e75c5), color-stop(50%,#096bbf), color-stop(100%,#0860b6)); /* Chrome,Safari4+ */
@@ -363,8 +363,6 @@ h4 {
       -webkit-box-shadow: inset 0 1px 0 #4695da;
       -moz-box-shadow:    inset 0 1px 0 #4695da;
       box-shadow:         inset 0 1px 0 #4695da;
-
-
 
       li {
         float: left;
@@ -424,6 +422,13 @@ h4 {
             &:after {
               background-position: left bottom;
             }
+          }
+        }
+
+        &.hover
+        {
+          .subMenu {
+            display: block;
           }
         }
 
@@ -3187,7 +3192,7 @@ ul {
     }
   }
 
-  #header #menuHolder #menu li a {
+  #header #menuHolder #nav li a {
     padding: 0 30px;
   }
 
