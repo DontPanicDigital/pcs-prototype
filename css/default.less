@@ -1832,7 +1832,7 @@ form {
     }
   }
 
-  input[type="text"] {
+  input[type="text"], input[type="password"] {
     width: 167px;
     height: 29px;
     background: #fff;
@@ -1857,6 +1857,12 @@ form {
     &.small {
       width: 55px;
     }
+  }
+
+  .helpInput {
+    float: left;
+    margin-left: 30px;
+    font-size: 15px;
   }
 
   .afterInput {
@@ -1909,7 +1915,7 @@ form {
   }
 
   .submit {
-    margin: 40px 0;
+    margin: 30px 0;
 
     .mainButton {
       cursor: pointer;
@@ -1950,6 +1956,56 @@ form {
         font-size: 15px !important;
         font-weight: bold;
         padding: 0 15px;
+      }
+    }
+  }
+
+  .dataHolder {
+    input[type="text"], input[type="password"] {
+      width: 343px;
+
+      &.small1, &.small2 {
+        float: left;
+      }
+
+      &.small1 {
+        width: 63px;
+      }
+
+      &.small2 {
+        width: 270px;
+        margin-left: 10px;
+        clear: none;
+      }
+    }
+
+    .col {
+      float: left;
+
+      &.first {
+        margin-right: 29px;
+      }
+
+      input[type="text"] {
+        width: 157px;
+      }
+    }
+
+    .blueBox {
+      background: #eff9fe;
+      border: 1px solid #d0e7f7;
+      padding: 20px;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      text-decoration: none;
+
+      &.w464 {
+        width: 464px;
+      }
+
+      .submit {
+        margin-bottom: 0;
       }
     }
   }
@@ -2354,6 +2410,10 @@ table {
 
   p {
     padding: 0;
+
+    a {
+      color: #424548;
+    }
   }
 }
 
@@ -2715,7 +2775,7 @@ table {
 
     tr {
       td, th {
-        padding-right: 10px;
+        padding-right: 20px;
         white-space: nowrap;
       }
     }
@@ -2724,67 +2784,129 @@ table {
   .products {
     tr {
       td, th {
-        padding: 20px 15px;
+        padding: 15px 20px;
+        border-right: 0;
+
+        &:first-child {
+          padding-left: 20px;
+        }
+
+        a {
+          font-size: 15px;
+          font-weight: normal;
+
+          &.viewAll {
+            margin-left: 10px;
+          }
+        }
+
+        .label {
+          font-size: 15px;
+          color: #096abf;
+          display: inline-block;
+          margin-right: 5px;
+
+          &.insurance {
+            margin: 0;
+            min-width: 63px;
+          }
+
+          &.beneficiary {
+            margin: 0;
+            min-width: 120px;
+          }
+        }
       }
-    }
-  }
 
-  .tableBox {
-    float: left;
-    margin-right: 1px;
-
-    &.last {
-      margin-right: 0;
-    }
-
-    ul {
-      li {
-        margin-bottom: 10px;
+      td {
         font-size: 18px;
-        color: #424548;
+        text-align: left;
 
-        &:last-child {
-          margin-bottom: 0;
+        &.firstCol {
+          width: 32%;
         }
 
-        address {
+        &.secondCol {
+          width: 17%;
+        }
+
+        &.thirdCol {
+          width: 31%;
+        }
+
+        &.fourthCol {
+          width: 20%;
+          text-align: right;
+        }
+
+        .tableBox {
           float: left;
+          padding: 15px 0 15px 20px;
+
+          &.first {
+            width: 32%;
+          }
+
+          &.second {
+            width: 48%;
+          }
+
+          &.third {
+            padding-left: 0;
+            float: right;
+            padding-right: 20px;
+          }
+
+          .percent {
+            display: inline-block;
+            margin-right: 20px;
+          }
+
+          .name {
+            display: inline-block;
+            min-width: 255px;
+          }
         }
+
       }
-    }
 
-    a {
-      font-size: 15px;
-    }
-
-    table {
-      float: left;
-      width: auto;
-
-      tr {
+      &.light {
         td {
-          font-size: 18px;
-          padding: 0 30px 10px 0;
-          border: 0;
-        }
-
-        &:last-child td {
-          padding-bottom: 0;
+          background: #fcfeff;
         }
       }
-    }
 
-    .label {
-      color: #096abf;
-      font-size: 15px;
-      float: left;
-      display: inline-block;
-      width: 67px;
-      clear: both;
+      &.detail {
+        display: none;
 
-      &.auto {
-        width: auto;
-        margin-right: 10px;
+        td {
+          border-bottom: 0;
+          padding: 0;
+        }
+
+        table tr td {
+          padding: 0;
+          border-bottom: 1px solid #c7e0f3;
+
+          p {
+            float: left;
+            max-width: 545px;
+            padding-top: 15px;
+            white-space: normal;
+          }
+
+          a.right {
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            display: inline-block !important;
+            line-height: 27px;
+          }
+        }
+
+        table tr:last-child td {
+          border-bottom: 0;
+        }
       }
     }
   }
@@ -3148,6 +3270,25 @@ table {
       }
     }
   }
+
+  .noticeBox {
+    background: url("../images/icoCross.png") no-repeat left 10px;
+    padding-left: 54px;
+
+    h2 {
+      line-height: normal;
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #424548;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .fixed {
@@ -3356,9 +3497,6 @@ ul {
   }
 
   .subPage #content .tableHolder {
-    .tableBox {
-      margin-right: 90px;
-    }
 
     .wrapTable {
       display: table;
@@ -3366,9 +3504,17 @@ ul {
 
       tr {
         td, th {
-          padding-right: 10px;
+          padding-right: 20px;
         }
       }
+    }
+
+    .products tr.detail table tr td a.right {
+      line-height: 27px;
+      float: right;
+      margin-right: 20px;
+      margin-top: 20px;
+      float: right;
     }
   }
 

@@ -3,6 +3,7 @@ $(document).ready(function() {
     fixedButton();
     hoverImage();
     accessibleDropDown();
+    showDetail();
 
     $( ".firstTable" ).click(function() {
         $('#divAlokace1').toggle();
@@ -51,6 +52,26 @@ function accessibleDropDown() {
         $(this).parents("li").removeClass("hover");
         $(this).parents("li").find(".hasSubmenu" ).removeClass("hoverItem");
     });
+}
+
+function showDetail() {
+    $("table tr.detail").addClass('hide');
+
+    $( ".viewMore" ).click(function() {
+        if($(this).closest('table').find('.detail').hasClass('hide')) {
+            $(this).closest('table').find('.detail').show();
+            $(this).text('Skrýt podrobnosti');
+            $(this).closest('table').find('.detail').removeClass('hide');
+        }
+
+        else {
+            $(this).closest('table').find('.detail').hide();
+            $(this).text('Zobrazit podrobnosti');
+            $(this).closest('table').find('.detail').addClass('hide');
+        }
+        return false;
+    });
+
 }
 
 function hoverImage() {
