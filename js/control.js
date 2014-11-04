@@ -15,6 +15,9 @@ $(document).ready(function() {
     });
 
     $('input:checkbox').checkbox();
+    $('input:radio').checkbox({
+        cls:'jquery-radio'
+    });
 
     $('.videos li:nth-child(2n)').css({"padding-right":"0","padding-left":"15px","float":"right"});
 

@@ -17,3 +17,31 @@
 .jquery-checkbox-checked img{
 	background-position: left bottom;
 }
+
+.jquery-radio {display: inline; margin-top: -1px; cursor: pointer; cursor: pointer; float: left;}
+.jquery-radio img {vertical-align: middle; width: 14px; height: 14px;}
+.jquery-radio img{background: transparent url("../images/radio.png") no-repeat;}
+
+.jquery-radio img{
+    background-position: left top;
+}
+
+.jquery-radio-checked img{
+    background-position: left bottom;
+}
+
+.jquery-radio + label {
+    width: auto;
+    margin-left: 8px;
+    font-weight: 15px;
+    font-weight: bold;
+}
+
+.radios {
+    margin-bottom: 20px;
+}
+
+.radios .jquery-radio {
+    clear: both;
+    margin-bottom: 10px;
+}
