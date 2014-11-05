@@ -4,6 +4,7 @@ $(document).ready(function() {
     hoverImage();
     accessibleDropDown();
     showDetail();
+    showOtherText();
 
     $( ".firstTable" ).click(function() {
         $('#divAlokace1').toggle();
@@ -31,6 +32,25 @@ $(document).ready(function() {
         speed: 1000
     });
 });
+
+function showOtherText() {
+    $('.hideText').addClass('hide');
+    $( ".showText" ).click(function() {
+        if($(this).parent().find('.hideText').hasClass('hide')) {
+            $(this).parent().find('.hideText').slideDown('fast');
+            $(this).parent().find('.hideText').removeClass('hide');
+            $(this).addClass('arrowUp');
+        }
+
+        else {
+            $(this).parent().find('.hideText').slideUp('fast');
+            $(this).parent().find('.hideText').addClass('hide');
+            $(this).removeClass('arrowUp');
+        }
+
+        return false;
+    });
+}
 
 function accessibleDropDown() {
 
@@ -102,16 +122,3 @@ function fixedButton() {
         });
     }
 }
-
-/*function submenuHover() {
-    $("#menu li").on({
-        mouseenter: function () {
-        $(this).children(".subMenu").stop().slideDown('fast');
-        $(this).find( ".hasSubmenu" ).addClass("hoverItem");
-    },
-        mouseleave: function () {
-        $(this).children(".subMenu").stop().slideUp('fast');
-        $(this).find( ".hasSubmenu" ).removeClass("hoverItem");
-        }
-    });
-}*/

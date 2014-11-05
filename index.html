@@ -127,6 +127,7 @@
 
             <div class="container">
                 <div id="needsNavigation">
+
                     <a href="/prototyp/calculator_rodina_1.html" class="needBox first">
                         <span class="mainNeeds">
                             <span class="needImage">
@@ -137,7 +138,7 @@
                             </span>
 
                             <span class="needText">
-                                Chováte se v životě<br />zodpovědně a myslíte na své
+                                Zodpovědná volba pro<br />ochranu vašich blízkých
                             </span>
 
                             <span class="needLink">Spočítat pojištění</span>
@@ -163,8 +164,8 @@
                             </span>
 
                             <span class="needText">
-                                Pořizujete si nemovitost na hypotéku a chcete mít klidný spánek po dobu splácení?
-                                Zajistí vám ho práve toto pojištění.
+                                Pro váš klid<br />
+                                během splácení
                             </span>
 
                             <span class="needLink">Spočítat pojištění</span>
@@ -189,8 +190,8 @@
                             </span>
 
                             <span class="needText">
-                                Žijete naplno, ale zodpovědnost vám velí nepodceňovat rizika?
-                                Udělejte správné rozhodnutí a zajistěte se včas.
+                                Pro ty, kteří<br />
+                                nepodceňují rizika
                             </span>
                             <span class="needLink">Spočítat pojištění</span>
                         </span>
@@ -214,8 +215,8 @@
                             </span>
 
                             <span class="needText">
-                                Chcete mít jistotu, že se o vaše dítě budete moci postarat ať se mu přihodí cokoli?
-                                Pak čtěte dál.
+                                Jistota pro<br />
+                                zodpovědné rodiče
                             </span>
                             <span class="needLink">Spočítat pojištění</span>
                         </span>
@@ -285,55 +286,30 @@
             <div id="nearestBranch">
                 <div class="container">
                     <h2>Rádi byste vše probrali osobně?</h2>
-                    <div id="nearestBranchText">Nejbližší pobočku máte v dosahu <strong>500 m</strong>, v okruhu 3 km máte dalších <strong>8 poboček.</strong></div>
-                    <div id="branchHolder">
-                        <a href="/prototyp/contact_sales.html" class="branchItem shadow first">
-                            <span class="branchImage">
-                                <img src="images/icoHouseBig.png" alt="house">
-                            </span>
-                            <span class="branchTitle">Česká spořitelna - Rytířská</span>
-                            <span class="address">
-                                Ulice: Strosmayerovo náměstí 357<br />
-                                Město: Praha 121094U10<br />
-                                Telefon: 123 123 123
-                            </span>
-                            <span class="branchLink">Zobrazit pobočku</span>
-                        </a>
+                    <div id="nearestBranchText">
+                        Navštívit más můžete v <strong>735</strong> pobočkách <storng>po celé České republice</storng>.
+                    </div>
 
-                        <a href="/prototyp/contact_sales.html" class="branchItem shadow">
-                            <span class="branchImage">
-                                <img src="images/icoHouseBig.png" alt="house">
-                            </span>
-                            <span class="branchTitle">Česká spořitelna - Rytířská</span>
-                            <span class="address">
-                                Ulice: Strosmayerovo náměstí 357<br />
-                                Město: Praha 121094U10<br />
-                                Telefon: 123 123 123
-                            </span>
-                            <span class="branchLink">Zobrazit pobočku</span>
-                        </a>
+                    <div class="addressFinder">
+                        <form method="post" action="/find">
+                            <div class="inCenter">
+                                <label for="address">
+                                    <strong>Zadejte adresu</strong> a zobrazte si pobočky ve vašem okolí
+                                </label>
 
-                        <a href="/prototyp/contact_sales.html" class="branchItem last">
-                            <span class="branchImage">
-                                <img src="images/icoMan.png" alt="man">
-                            </span>
-                            <span class="branchTitle">Osvald Pojistitel</span>
-                            <span class="address">
-                                Ulice: Strosmayerovo náměstí 357<br />
-                                Město: Praha 121094U10<br />
-                                Telefon: 123 123 123
-                            </span>
-                            <span class="branchLink">Zobrazit pobočku</span>
-                        </a>
-                    </div> <!-- /branchHolder -->
-
+                                <input type="text" name="address" id="address" />
+                                <input type="submit" name="subm" id="subm" class="mainButton h29" value="Vyhledat pobočku" />
+                            </div>
+                        </form>
+                        <div class="cleaner">&nbsp;</div>
+                    </div> <!-- /addressFinder -->
+                    <div class="cleaner">&nbsp;</div>
                 </div> <!-- /container -->
 
-                <img src="images/map.jpg" alt="map" class="inCenter minMap" />
 
                 <div class="cleaner">&nbsp;</div>
             </div> <!-- /nearestBranch -->
-
+            <img src="images/map.jpg" alt="map" class="inCenter minMap" />
             <div id="footer">
                 <div class="container basicPadding">
                     <div class="col-half logos">
