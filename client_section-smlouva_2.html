@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Don't Panic, s.r.o.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+    <script type="text/javascript" src="js/control.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" media="screen" href="css/default.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.checkbox.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
+    <script type="text/javascript" src="js/respond.js"></script>
+
+    <title>Klientská sekce - Smlouva | Flexi pojištění</title>
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" media="screen" href="css/ie.css" />
+    <![endif]-->
+</head>
+
+<body class="subPage">
+<div id="main">
+<div id="mainIn">
+<div id="header">
+    <div class="container">
+        <h1 id="logo">
+            <a href="/prototyp/" title="flexi životní pojištění">
+                <img src="images/logo.jpg" alt="logo" />
+                <span>flexi životní pojištění</span>
+            </a>
+        </h1>
+        <a href="http://www.pojistovnacs.cz/" id="pcsLogo" title="Pojišťovna České spořitelny" target="_blank"><img src="images/PCSlogo.jpg" alt="PCS" /></a>
+
+        <div id="headerLogin">
+            <ul>
+                <li>
+                    <form action="/search" method="post">
+                        <input type="text" name="search" />
+                        <input type="submit" name="submit" id="submit" value="Najít" />
+                    </form>
+                </li>
+                <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
+                <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+            </ul>
+        </div> <!-- /headerLogin -->
+
+        <div class="cleaner">&nbsp;</div>
+        <div id="headerPhone">956 777 222</div>
+
+        <!----- MENU ----->
+        <div id="menuHolder">
+            
+        </div> <!-- /menuHolder -->
+        <!----- /MENU ----->
+
+    </div> <!-- /container -->
+</div> <!-- /header -->
+
+<div id="content">
+    <div class="productBox padZero">
+        <div class="container">
+            <div class="productBoxIn">
+                <div id="breadcrumb">
+                    <ul>
+                        <li><a href="/prototyp/">úvod</a>></li>
+                        <li><a href="/prototyp/">pro klienty</a>></li>
+                        <li><a href="/prototyp/">má pojistka</a>></li>
+                        <li>změna kontaktích údajů</li>
+                    </ul>
+                </div> <!-- /breadcrumb -->
+
+                <ul class="loginBox">
+                    <li><a href="#">nastavení účtu</a></li>
+                    <li><a href="#">odhlásit</a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+
+                <div id="productInformation" class="mt20">
+                    <ul class="newsLinks productNavigation">
+                        <li><a href="/prototyp/#"><span>Základní údaje</span></a></li>
+                        <li><a href="/prototyp/#" class="active"><span>Pojistné smlouvy</span></a></li>
+                        <li><a href="/prototyp/#"><span>Platby</span></a></li>
+                        <li><a href="/prototyp/#"><span>Plnění</span></a></li>
+                        <li><a href="/prototyp/#"><span>Pojištění rizikových sportů</span></a></li>
+                        <li><a href="/prototyp/#"><span>Zprávy PČS</span><span class="number">4</span></a></li>
+                    </ul>
+
+                    <div class="cleaner">&nbsp;</div>
+                </div> <!-- /productInformation -->
+            </div> <!-- /productBoxIn -->
+        </div> <!-- / container -->
+
+        <div class="cleaner">&nbsp;</div>
+    </div> <!-- /productBox -->
+
+    <div class="container basicPadding">
+        <h2 class="blue">FLEXI 29736827482</h2>
+        <h3 class="red">Úprava obyšlených osob</h3>
+        <table class="detailTable detailTable2">
+            <tr>
+                <th>
+                    Číslo pojistné smlouvy
+                </th>
+                <td>
+                    <strong>
+                        5500242487
+                    </strong>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Pojistný produkt
+                </th>
+                <td>
+                    Flexibilní životní pojištění
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Platnost do
+                </th>
+                <td>
+                    <strong>
+                        31.7. 2035
+                    </strong>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Stav
+                </th>
+                <td>
+                    <strong>
+                        Platná
+                    </strong>
+                </td>
+            </tr>
+        </table>
+        <div class="cleaner">&nbsp;</div>
+        <form action="/form" method="post">
+            <div class="checkboxes2">
+                <div class="inLeft">
+                    <input type="checkbox" name="check1" id="check1" />
+                    <label for="check1">Ze zákona</label>
+
+                    <input type="checkbox" name="check2" id="check2" />
+                    <label for="check2">Obmyšlené osoby</label>
+                </div>
+
+                <div class="inRight">
+                    <label for="input1">Podíl</label>
+                    <input type="text" name="input1" value="30" id="input1" />
+                    <span class="afterInput">%</span>
+                </div>
+
+                <div class="cleaner">&nbsp;</div>
+            </div>
+
+            <div class="cleaner">&nbsp;</div>
+
+            <div class="itemsHolder inputs wBorder">
+                <table>
+                    <tr>
+                        <th>
+                            Jméno
+                        </th>
+
+                        <th class="inputs2">
+                            Datum narození
+                        </th>
+
+                        <th>
+                            Podíl
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="60" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td>
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+                    </tr>
+                </table>
+            </div> <!-- /itemsHolder -->
+
+            <div class="submit">
+                <input type="submit" name="submit2" id="submit2" class="mainButton" value="Pokračovat" />
+            </div>
+        </form>
+
+        <div class="cleaner">&nbsp;</div>
+    </div> <!-- /container -->
+
+    <div class="cleaner">&nbsp;</div>
+</div> <!-- /content -->
+
+
+<div id="footer">
+    <div class="container basicPadding">
+        <div class="col-half logos">
+            <a href="http://www.pojistovnacs.cz/" title="Pojišťovna České spořitelny" class="footerLogo" target="_blank"><img src="images/PCSlogoFooter.jpg" alt="PCS" /></a>
+            <a href="http://www.pojistovnacs.cz/media/vig/" title="Vienna Insurance Group" target="_blank"><img src="images/VIGlogo.jpg" alt="VIG" /></a>
+        </div>
+
+        <div class="col-half footerInfo colPadding">
+            <ul>
+                <li><span>Klientská linka:</span> 956 777 222</li>
+                <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
+            </ul>
+
+            <div class="socials">
+                <a href="/prototyp/#" class="fb">Facebook</a>
+                <a href="/prototyp/#" class="tw">Twitter</a>
+                <a href="/prototyp/#" class="play">Play</a>
+            </div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+
+        <div class="footerDivider">&nbsp;</div>
+
+        <div id="footerMenu">
+            <div class="col-half twoColumn">
+                <ul>
+                    <li class="footerMenuTitle">Pro partnery</li>
+                    <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
+                    <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
+                </ul>
+
+                <ul class="last">
+                    <li class="footerMenuTitle">Obecné infromace</li>
+                    <li><a href="/prototyp/#">Prohlášení o přístupnosti</a></li>
+                    <li><a href="/prototyp/#">Informace o webu</a></li>
+                    <li><a href="/prototyp/#">Mapa stránek</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col-half colPadding oneColumn">
+                <ul class="last">
+                    <li class="footerMenuTitle">Co je nového</li>
+                    <li><a href="/prototyp/#">Běh s FLEXI pro Paraple v neděli na Letné</a></li>
+                    <li><a href="/prototyp/#">Novinky e-mailem</a></li>
+                </ul>
+            </div>
+
+            <div class="cleaner">&nbsp;</div>
+        </div>
+
+        <span class="copy">© Pojišťovna České spořitelny, a.s., Vienna Insurance Group</span>
+    </div> <!-- /container -->
+</div> <!-- /footer -->
+</div> <!-- /mainIn -->
+</div> <!-- /main -->
+</body>
+</html>

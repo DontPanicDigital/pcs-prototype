@@ -21,13 +21,14 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: #424548;
-  background-color: #fff;
+  background-color: #0a4780;
 }
 
 html, body {height: 100%; }
@@ -180,6 +181,10 @@ p a:hover {
 
 .lh45 {
   line-height: 45px;
+}
+
+.dn {
+  display: none;
 }
 
 h2 {
@@ -1030,6 +1035,54 @@ h4 {
       height: 41px;
     }
   }
+
+  &.signpost {
+    height: auto;
+    min-height: initial;
+    padding: 0 27px;
+    margin-bottom: 40px;
+
+    .branchItem {
+      height: auto;
+      padding: 0;
+      width: 168px;
+      padding: 40px 15px 30px 0;
+      margin-right: 15px;
+
+      .branchImage {
+        width: 60px;
+        height: 60px;
+        display: table;
+
+        span {
+          display: table-cell;
+          vertical-align: middle;
+
+          img {
+            position: relative;
+          }
+        }
+      }
+
+      .branchTitle {
+        margin: 0;
+      }
+
+      .branchLink {
+        margin-top: 5px;
+        font-size: 15px;
+      }
+
+      &.divider {
+        background: url("../images/signpostDivider.png") no-repeat right center;
+      }
+
+      &.last {
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+  }
 }
 
 .inCenter {
@@ -1258,6 +1311,10 @@ h4 {
     font-size: 15px !important;
     font-weight: bold;
     padding: 0 15px;
+  }
+
+  &.h45 {
+    height: 45px;
   }
 }
 
@@ -1857,6 +1914,18 @@ form {
     &.small {
       width: 55px;
     }
+
+    &.w177 {
+      width: 177px !important;
+    }
+
+    &.w127 {
+      width: 127px !important;
+    }
+
+    &.w67 {
+      width: 67px !important;
+    }
   }
 
   .helpInput {
@@ -1871,6 +1940,12 @@ form {
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
     margin-left: 10px;
+    line-height: 29px;
+  }
+
+  .afterLink {
+    float: left;
+    margin-left: 20px;
     line-height: 29px;
   }
 
@@ -1911,6 +1986,37 @@ form {
     .inRight {
       float: left;
       margin-left: 30px;
+    }
+  }
+
+  .checkboxes2 {
+    margin-bottom: 15px;
+
+    .inLeft {
+      float: left;
+    }
+
+    .inRight {
+      float: left;
+      margin-left: 190px;
+
+      label {
+        float: left;
+        width: auto;
+        margin-right: 10px;
+        line-height: 29px;
+      }
+
+      input[type="text"] {
+        width: 67px;
+        clear: none;
+        float: left;
+      }
+    }
+
+    .jquery-checkbox {
+      clear: both;
+      margin-bottom: 20px;
     }
   }
 
@@ -2241,7 +2347,7 @@ table {
     display: table;
     margin-bottom: 25px;
 
-    span {
+    span.in {
       display: table-cell;
       vertical-align: middle;
       color: #096abf;
@@ -2272,6 +2378,44 @@ table {
       text-decoration: underline;
     }
   }
+
+  &.inContact {
+    float: left;
+    margin-top: 0;
+
+    .phone, .mail {
+      text-decoration: none;
+      span.in {
+        font-weight: normal;
+        font-size: 15px;
+        text-decoration: none;
+
+        span {
+          display: block;
+          font-weight: bold;
+          font-size: 24px;
+          margin-top: 3px;
+        }
+      }
+    }
+
+    .mail {
+      span.in span {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        span.in span {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.addressContact {
+  float: left;
+  margin-left: 60px;
 }
 
 .openingHours {
@@ -2349,6 +2493,7 @@ table {
   border: 1px solid #fbf8f8;
   box-shadow: 0 0 8px rgba(102,150,191,0.28);
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .client {
@@ -2926,6 +3071,7 @@ table {
 }
 
 .subPage #content {
+
   .newsLinks {
     margin: 0;
     padding: 0;
@@ -3405,6 +3551,12 @@ ul {
   }
 }
 
+@media (min-height: 700px) and (max-height: 1900px){
+  .subPage #content {
+    min-height: 520px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -3494,6 +3646,10 @@ ul {
   .container {
     width: 970px;
     padding: 0;
+  }
+
+  .addressContact {
+    margin-left: 100px;
   }
 
   .subPage #content .tableHolder {
@@ -3835,8 +3991,16 @@ ul {
         th, td {
           width: 23%;
 
+          &.firstItem {
+            width: 50%;
+          }
+
           &:last-child {
             width: auto;
+          }
+
+          &.inputs2 {
+            width: 16%;
           }
         }
       }
