@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+.sbHolder{
+	background-color: #fff;
+	border: solid 1px #c6d5e3;
+    color: #424548;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+	position: relative;
+    width: 245px;
+    height: 29px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin-bottom: 40px;
+}
+.sbHolder:focus .sbSelector{
+	
+}
+.sbSelector{
+	display: block;
+	height: 29px;
+	left: 0;
+	line-height: 29px;
+	outline: none;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 10px;
+	top: 0;
+	width: 245px;
+    color: #424548;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+.sbSelector:link, .sbSelector:visited, .sbSelector:hover{
+    color: #424548;
+    font-size: 16px !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sbToggle{
+	background: #ed1b24 url("../images/arrowDown.png") no-repeat center center;
+	display: block;
+    height: 27px;
+	outline: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sbOptions{
+	background-color: #fff;
+    border-right: 1px solid #c6d5e3;
+    border-left: 1px solid #c6d5e3;
+    border-bottom: 1px solid #c6d5e3;
+	list-style: none;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 29px;
+	width: 100%;
+	z-index: 1;
+	overflow-y: auto;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.sbOptions li{
+	padding: 0 7px;
+}
+.sbOptions a {
+    border-bottom: 1px solid #c6d5e3;
+    width: 100%;
+	display: block;
+	outline: none;
+	padding: 7px 0 7px 3px;
+    color: #424548;
+    font-size: 16px !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.sbOptions a:hover {
+    color: #ed1c24;
+}
+
+.sbOptions li.last a, .sbOptions li:last-child a {
+	border-bottom: none;
+}
+.sbOptions .sbDisabled{
+	border-bottom: dotted 1px #515151;
+	color: #999;
+	display: block;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbGroup{
+	border-bottom: dotted 1px #515151;
+	color: #EBB52D;
+	display: block;
+	font-weight: bold;
+	padding: 7px 0 7px 3px;
+}
+.sbOptions .sbSub{
+	padding-left: 17px;
+}

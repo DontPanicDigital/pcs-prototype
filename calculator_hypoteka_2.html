@@ -46,8 +46,8 @@
                                     <input type="submit" name="submit" id="submit" value="Najít" />
                                 </form>
                             </li>
-                            <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
-                            <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+                            <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
+                            <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
                         </ul>
                     </div> <!-- /headerLogin -->
 
@@ -185,6 +185,13 @@
                             </div>
 
                             <div class="formRow">
+                                <label for="monthPrice2">Měsíční splátka úvěru</label>
+                                <input type="text" name="monthPrice2" id="monthPrice2" value="500" />
+                                <span class="afterInput">Kč</span>
+                                <div class="cleaner">&nbsp;</div>
+                            </div>
+
+                            <div class="formRow">
                                 <label for="age">Váš věk</label>
                                 <input type="text" name="age" id="age" value="35" />
                                 <span class="afterInput">let</span>
@@ -192,7 +199,7 @@
                             </div>
 
                             <div class="formRow mt50">
-                                <label for="monthPrice">Měsíční částka pojistného <span>(vaše platba za pojištění)</span></label>
+                                <label for="monthPrice">Měsíční pojistné <span>(vaše platba za pojištění)</span></label>
                                 <input type="text" name="monthPrice" id="monthPrice" value="850" />
                                 <span class="afterInput">Kč</span>
                                 <div class="cleaner">&nbsp;</div>
@@ -205,6 +212,11 @@
                                     <label for="death" class="twoRows">Smrt z jakýchkoliv příčin<br /><span>s anuitně klesající pojistnou částkou</span></label>
                                     <input type="text" name="death" id="death" value="2 000 000">
                                     <span class="afterInput">Kč jednorázově</span>
+                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            v případě smrti pojištěného bude zvolené (tzv. obmyšlené) osobě (není-li uvedena, tak osobám dle zákona) vyplacena pojistná částka nebo kapitálová hodnota smlouvy  (pokud je vyšší) toto plnění je vypláceno mimo dědické řízení
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">
                                         <span class="red">Co je anuitně klesající pojistná částka?</span>
                                         <span class="answ">Pojistné zohledňuje klesající výši nesplaceného úvěru, což znamená významnou úsporu pro vaši kapsu.</span>
@@ -223,6 +235,11 @@
                                     <label for="inability" class="twoRows">Pracovní neschopnost<br /><span>úraz a nemoc od 29. dne</span></label>
                                     <input type="text" name="inability" id="inability" value="350">
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            budete-li v pracovní neschopnosti z důvodu nemoci, vyplatí vám pojišťovna částku ve smluvně stanoveném denním rozsahu, a to od 15. či 29. dne trvání pracovní neschopnosti (dle toho jak máte sjednáno ve smlouvě), pojistné je vypláceno maximálně za 548 dnů pracovní neschopnosti.
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div>
                             </div>
@@ -234,6 +251,11 @@
                                     <label for="injury">Smrt následkem úrazu</span></label>
                                     <input type="text" name="injury" id="injury" value="0">
                                     <span class="afterInput">Kč jednorázově</span>
+                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            částka, která bude vyplacena zvolené osobě v případě smrti pojištěného zapříčiněné úrazem; v případě smrti následkem úrazu se sčítá s částkou pro pojištění smrti z jakýchkoli příčin
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div>
 
@@ -245,9 +267,14 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <label for="inability">Travalé následky úrazu</label>
+                                    <label for="inability">Trvalé následky úrazu - 0,5%</label>
                                     <input type="text" name="inability" id="inability" value="0">
                                     <span class="afterInput">Kč jednorázově</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            plnění již od 0,5 % trvalého tělesného poškození (např. ztráta zubu v důsledku úrazu nebo menší trvalá jizva); díky progresivnímu plnění, které je součástí tohoto pojištění, se zvyšuje pojistná částka dle rozsahu tělesného poškození až do výše čtyřnásobku sjednané pojistné částky
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div>
 
@@ -255,6 +282,11 @@
                                     <label for="dayInjury">Denní odškodné - úraz</label>
                                     <input type="text" name="dayInjury" id="dayInjury" value="0">
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            budete-li mít úraz, jehož doba léčení dosáhne alespoň 8 dnů, vyplatí vám pojišťovna stanovenou částku (tzv. denní odškodné) za každý den léčení úrazu, a to od prvního dne, včetně sobot, nedělí a svátků, nemusíte být v pracovní neschopnosti
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div>
 
@@ -262,6 +294,11 @@
                                     <label for="hospit">Hospitalizace - úraz a nemoc</label>
                                     <input type="text" name="hospit" id="hospit" value="0">
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            v případě hospitalizace z důvodu úrazu nebo nemoci trvající min. 24 hodin vám pojišťovna vyplatí stanovenou částku od prvního dne hospitalizace za každý započatý den hospitalizace, nemusíte dokládat pracovní neschopnost
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div>
                             </div>
@@ -284,6 +321,12 @@
                                         Kapitálová hodnota v 75 letech
                                     </th>
                                     <td>47&nbsp;376 Kč</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Celkem tedy můžete získat:
+                                    </th>
+                                    <td>96 262 Kč</td>
                                 </tr>
                                 <tr>
                                     <th colspan="2" class="afterTable">
@@ -337,6 +380,11 @@
                                 </form>
                             </div> <!-- /contactFormHolder -->
 
+                            <div class="linksHolder">
+                                <a href="/prototyp/#" class="print">Vytisknout toto pojištění</a>
+                                <a href="/prototyp/#" class="pdf">Stáhnout jako PDF</a>
+                            </div>
+
                         </form>
 
                         <div class="cleaner">&nbsp;</div>
@@ -359,11 +407,7 @@
                             <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
                         </ul>
 
-                        <div class="socials">
-                            <a href="/prototyp/#" class="fb">Facebook</a>
-                            <a href="/prototyp/#" class="tw">Twitter</a>
-                            <a href="/prototyp/#" class="play">Play</a>
-                        </div>
+
                     </div>
                     <div class="cleaner">&nbsp;</div>
 
@@ -375,6 +419,7 @@
                                 <li class="footerMenuTitle">Pro partnery</li>
                                 <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
                                 <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
+                                <li><a href="/prototyp/">aplikace FLEXI</a></li>
                             </ul>
 
                             <ul class="last">

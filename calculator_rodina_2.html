@@ -46,8 +46,8 @@
                                     <input type="submit" name="submit" id="submit" value="Najít" />
                                 </form>
                             </li>
-                            <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
-                            <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+                            <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
+                            <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
                         </ul>
                     </div> <!-- /headerLogin -->
 
@@ -181,7 +181,7 @@
                             </div>
 
                             <div class="formRow">
-                                <label for="price2">Masíční příjem</label>
+                                <label for="price2">Měsíční příjem</label>
                                 <input type="text" name="price2" id="price2" value="16350" />
                                 <span class="afterInput">Kč (bude použit pouze pro výpočet)</span>
                                 <div class="cleaner">&nbsp;</div>
@@ -197,7 +197,10 @@
                                     <label for="child">Věk dítěte</label>
                                     <input type="text" name="child" id="child" value="8"/>
                                     <span class="afterInput">let</span>
-                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" /></span>
+                                    <span class="icoInformation">
+                                         <img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">Pokud je vaše dítě mladší než 1 rok zadejte 0</span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                     Vypočtené částky pro pojištění dítěte naleznete<br />
                                     pod částkama zajištění váší osoby.
@@ -213,6 +216,11 @@
                                     <label for="death">Smrt z jakýchkoliv příčin</label>
                                     <input type="text" name="death" id="death" value="250 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            v případě smrti pojištěného bude zvolené (tzv. obmyšlené) osobě (není-li uvedena, tak osobám dle zákona) vyplacena pojistná částka nebo kapitálová hodnota smlouvy  (pokud je vyšší) toto plnění je vypláceno mimo dědické řízení
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Pokryje výpadek vašeho příjmu na 12 měsíců</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
@@ -221,16 +229,44 @@
                                     <label for="death2">Smrt následkem úrazu</label>
                                     <input type="text" name="death2" id="death2" value="200 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
-                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="info" /></span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            částka, která bude vyplacena zvolené osobě v případě smrti pojištěného zapříčiněné úrazem; v případě smrti následkem úrazu se sčítá s částkou pro pojištění smrti z jakýchkoli příčin
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Pokryje výpadek vašeho příjmu na 12 měsíců</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <label for="inv">Invalidita <span>(1.-3. stupeň)</span></label>
-                                    <input type="text" name="inv" id="inv" value="350 000"/>
-                                    <span class="afterInput">Kč jednorázově</span>
-                                    <span class="inputInfo">Invalidní vozík stojí 150 000 Kč</span>
+                                    <div class="itemCol">
+                                        <label for="inv">Invalidita <span>3. stupeň s klesající PČ</span></label>
+                                        <input type="text" name="inv" id="inv" value="350 000"/>
+                                        <span class="afterInput">Kč jednorázově</span>
+                                        <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                            <span class="infoBubble">
+                                                částka, která bude vyplacena zvolené osobě v případě smrti pojištěného zapříčiněné úrazem; v případě smrti následkem úrazu se sčítá s částkou pro pojištění smrti z jakýchkoli příčin
+                                            </span>
+                                        </span>
+                                        <span class="inputInfo">Invalidní vozík stojí 150 000 Kč</span>
+                                        <div class="cleaner">&nbsp;</div>
+                                    </div>
+
+                                    <div class="itemCol">
+                                        <label for="inv2">Invalidita <span>2. stupeň s klesající PČ</span></label>
+                                        <input type="text" name="inv" id="inv2" value="250 000"/>
+                                        <span class="afterInput">Kč jednorázově</span>
+                                        <span class="inputInfo">&nbsp;</span>
+                                        <div class="cleaner">&nbsp;</div>
+                                    </div>
+
+                                    <div class="itemCol last">
+                                        <label for="inv3">Invalidita <span>1. stupeň s klesající PČ</span></label>
+                                        <input type="text" name="inv3" id="inv3" value="300 000"/>
+                                        <span class="afterInput">Kč jednorázově</span>
+                                        <span class="inputInfo">&nbsp;</span>
+                                        <div class="cleaner">&nbsp;</div>
+                                    </div>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
@@ -243,9 +279,14 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <label for="incident">Travalé následky úrazu</label>
+                                    <label for="incident">Travalé následky úrazu - 0,5%</label>
                                     <input type="text" name="incident" id="incident" value="500 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            plnění již od 0,5 % trvalého tělesného poškození (např. ztráta zubu v důsledku úrazu nebo menší trvalá jizva); díky progresivnímu plnění, které je součástí tohoto pojištění, se zvyšuje pojistná částka dle rozsahu tělesného poškození až do výše čtyřnásobku sjednané pojistné částky
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Pokryje výpadek vašeho příjmu na 12 měsíců</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
@@ -254,6 +295,11 @@
                                     <label for="incident2">Denní odškodné - úraz</label>
                                     <input type="text" name="incident2" id="incident2" value="250"/>
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            budete-li mít úraz, jehož doba léčení dosáhne alespoň 8 dnů, vyplatí vám pojišťovna stanovenou částku (tzv. denní odškodné) za každý den léčení úrazu, a to od prvního dne, včetně sobot, nedělí a svátků, nemusíte být v pracovní neschopnosti
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Váš bežný příjem je 500 Kč/den</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
@@ -262,6 +308,11 @@
                                     <label for="hosp">Hospitalizace - úraz a nemoc</label>
                                     <input type="text" name="hosp" id="hosp" value="250"/>
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            v případě hospitalizace z důvodu úrazu nebo nemoci trvající min. 24 hodin vám pojišťovna vyplatí stanovenou částku od prvního dne hospitalizace za každý započatý den hospitalizace, nemusíte dokládat pracovní neschopnost
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Váš bežný příjem je 500 Kč/den</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
@@ -270,6 +321,11 @@
                                     <label for="work">Pracovní neschopnost <span>- nemoc od 15. dne</span></label>
                                     <input type="text" name="work" id="work" value="200"/>
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            budete-li v pracovní neschopnosti z důvodu nemoci, vyplatí vám pojišťovna částku ve smluvně stanoveném denním rozsahu, a to od 15. či 29. dne trvání pracovní neschopnosti (dle toho jak máte sjednáno ve smlouvě), pojistné je vypláceno maximálně za 548 dnů pracovní neschopnosti.
+                                        </span>
+                                    </span>
                                     <span class="inputInfo">Váš bežný příjem je 500 Kč/den</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
@@ -289,6 +345,11 @@
                                     <label for="incident3">Travalé následky úrazu <span>- dítě</span></label>
                                     <input type="text" name="incident3" id="incident3" value="500 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            plnění již od 0,5 % trvalého tělesného poškození (např. ztráta zubu v důsledku úrazu nebo menší trvalá jizva); díky progresivnímu plnění, které je součástí tohoto pojištění, se zvyšuje pojistná částka dle rozsahu tělesného poškození až do výše čtyřnásobku sjednané pojistné částky
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
@@ -296,6 +357,11 @@
                                     <label for="day">Denní odškodné <span>- dítě</span></label>
                                     <input type="text" name="day" id="day" value="250"/>
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            bude-li mít vaše dítě úraz, jehož doba léčení dosáhne alespoň 8 dnů, vyplatí vám pojišťovna stanovenou částku (tzv. denní odškodné)  za každý den lečení úrazu, a to od prvného dne, včetně sobot, nedělí a svátků
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
@@ -303,6 +369,11 @@
                                     <label for="hosp2">Hospitalizace <span>- dítě</span></label>
                                     <input type="text" name="hosp2" id="hosp2" value="250"/>
                                     <span class="afterInput">Kč/den</span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">
+                                            v případě hospitalizace vašeho dítěte z důvodu úrazu nebo nemoci trvající min. 24 hodin vám pojišťovna vyplatí stanovenou částku od prvního dne hospitalizace za každý započatý den hospitalizace, nemusíte dokládat pracovní neschopnost
+                                        </span>
+                                    </span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
                             </div> <!-- /itemsHolder -->
@@ -323,9 +394,15 @@
 
                                 <tr>
                                     <th>
-                                        Kapitálová hodnota v 65 letech
+                                        Kapitálová hodnota v 75 letech
                                     </th>
                                     <td>34 586 Kč</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Celkem tedy můžete získat:
+                                    </th>
+                                    <td>75 066 Kč</td>
                                 </tr>
                                 <tr>
                                     <th colspan="2" class="afterTable">
@@ -406,11 +483,7 @@
                             <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
                         </ul>
 
-                        <div class="socials">
-                            <a href="/prototyp/#" class="fb">Facebook</a>
-                            <a href="/prototyp/#" class="tw">Twitter</a>
-                            <a href="/prototyp/#" class="play">Play</a>
-                        </div>
+
                     </div>
                     <div class="cleaner">&nbsp;</div>
 
@@ -422,6 +495,7 @@
                                 <li class="footerMenuTitle">Pro partnery</li>
                                 <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
                                 <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
+                                <li><a href="/prototyp/">aplikace FLEXI</a></li>
                             </ul>
 
                             <ul class="last">

@@ -48,8 +48,8 @@
                         <input type="submit" name="submit" id="submit" value="Najít"/>
                     </form>
                 </li>
-                <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
-                <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+                <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
+                <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
             </ul>
         </div>
         <!-- /headerLogin -->
@@ -201,23 +201,35 @@
                     <label for="death" class="twoRows">Smrt z jakýchkoliv příčin</label>
                     <input type="text" name="death" id="death" value="10 000">
                     <span class="afterInput">Kč jednorázově</span>
-
-                    <div class="cleaner">&nbsp;</div>
-                </div>
-
-                <div class="itemRow first">
-                    <label for="injury">Smrt následkem úrazu</span></label>
-                    <input type="text" name="injury" id="injury" value="0">
-                    <span class="afterInput">Kč jednorázově</span>
-
+                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                        <span class="infoBubble">
+                            v případě smrti pojištěného bude zvolené (tzv. obmyšlené) osobě (není-li uvedena, tak osobám dle zákona) vyplacena pojistná částka nebo kapitálová hodnota smlouvy  (pokud je vyšší) toto plnění je vypláceno mimo dědické řízení
+                        </span>
+                    </span>
                     <div class="cleaner">&nbsp;</div>
                 </div>
 
                 <div class="itemRow">
-                    <label for="inability">Travalé následky úrazu</label>
+                    <label for="injury">Smrt následkem úrazu</span></label>
+                    <input type="text" name="injury" id="injury" value="0">
+                    <span class="afterInput">Kč jednorázově</span>
+                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                        <span class="infoBubble">
+                            částka, která bude vyplacena zvolené osobě v případě smrti pojištěného zapříčiněné úrazem; v případě smrti následkem úrazu se sčítá s částkou pro pojištění smrti z jakýchkoli příčin
+                        </span>
+                    </span>
+                    <div class="cleaner">&nbsp;</div>
+                </div>
+
+                <div class="itemRow">
+                    <label for="inability">Trvalé následky úrazu - 0,5%</label>
                     <input type="text" name="inability" id="inability" value="0">
                     <span class="afterInput">Kč jednorázově</span>
-
+                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                        <span class="infoBubble">
+                            plnění již od 0,5 % trvalého tělesného poškození (např. ztráta zubu v důsledku úrazu nebo menší trvalá jizva); díky progresivnímu plnění, které je součástí tohoto pojištění, se zvyšuje pojistná částka dle rozsahu tělesného poškození až do výše čtyřnásobku sjednané pojistné částky
+                        </span>
+                    </span>
                     <div class="cleaner">&nbsp;</div>
                 </div>
 
@@ -225,7 +237,11 @@
                     <label for="dayInjury">Denní odškodné - úraz</label>
                     <input type="text" name="dayInjury" id="dayInjury" value="0">
                     <span class="afterInput">Kč/den</span>
-
+                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                        <span class="infoBubble">
+                            budete-li mít úraz, jehož doba léčení dosáhne alespoň 8 dnů, vyplatí vám pojišťovna stanovenou částku (tzv. denní odškodné) za každý den léčení úrazu, a to od prvního dne, včetně sobot, nedělí a svátků, nemusíte být v pracovní neschopnosti
+                        </span>
+                    </span>
                     <div class="cleaner">&nbsp;</div>
                 </div>
 
@@ -233,7 +249,11 @@
                     <label for="hospit">Hospitalizace - úraz a nemoc</label>
                     <input type="text" name="hospit" id="hospit" value="0">
                     <span class="afterInput">Kč/den</span>
-
+                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                        <span class="infoBubble">
+                            v případě hospitalizace z důvodu úrazu nebo nemoci trvající min. 24 hodin vám pojišťovna vyplatí stanovenou částku od prvního dne hospitalizace za každý započatý den hospitalizace, nemusíte dokládat pracovní neschopnost
+                        </span>
+                    </span>
                     <div class="cleaner">&nbsp;</div>
                 </div>
 
@@ -245,25 +265,25 @@
             <table class="w355">
                 <tr>
                     <th>Bonus za bezeškodní průběh</th>
-                    <td>36&nbsp;736 Kč</td>
+                    <td>10 831 Kč</td>
                 </tr>
 
                 <tr>
                     <th>Bonus za věrnost</th>
-                    <td>12&nbsp;150 Kč</td>
+                    <td>3 906 Kč</td>
                 </tr>
 
                 <tr>
                     <th>
                         *Kapitálová hodnota v 75 letech
                     </th>
-                    <td>47&nbsp;376 Kč</td>
+                    <td>14 412 Kč</td>
                 </tr>
                 <tr>
                     <th>
                         Celkem tedy získáte:
                     </th>
-                    <td>96&nbsp;262 Kč</td>
+                    <td>29 149 Kč</td>
                 </tr>
                 <tr>
                     <th colspan="2" class="afterTable">
@@ -324,6 +344,11 @@
             </div>
     </div>
 
+    <div class="linksHolder">
+        <a href="/prototyp/#" class="print">Vytisknout toto pojištění</a>
+        <a href="/prototyp/#" class="pdf">Stáhnout jako PDF</a>
+    </div>
+
     <div class="cleaner">&nbsp;</div>
 </div>
 <!-- /content -->
@@ -343,11 +368,7 @@
                 <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
             </ul>
 
-            <div class="socials">
-                <a href="/prototyp/#" class="fb">Facebook</a>
-                <a href="/prototyp/#" class="tw">Twitter</a>
-                <a href="/prototyp/#" class="play">Play</a>
-            </div>
+
         </div>
         <div class="cleaner">&nbsp;</div>
 
@@ -359,7 +380,8 @@
                     <li class="footerMenuTitle">Pro partnery</li>
                     <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
                     <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
-                </ul>
+<li><a href="/prototyp/">aplikace FLEXI</a></li>
+</ul>
 
                 <ul class="last">
                     <li class="footerMenuTitle">Obecné infromace</li>

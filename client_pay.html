@@ -46,8 +46,8 @@
                         <input type="submit" name="submit" id="submit" value="Najít" />
                     </form>
                 </li>
-                <li><a href="/prototyp/">Nahlásit pojistnou událost</a></li>
-                <li><a href="/prototyp/">Klientská sekce - přihlášení</a></li>
+                <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
+                <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
             </ul>
         </div> <!-- /headerLogin -->
 
@@ -83,10 +83,12 @@
                     <form method="post" action="/filtred">
                         <div class="formRow">
                             <label for="text" class="formTitle">
-                                Zadejte prosím vaše číslo smlouvy pro zjištění paltebních údajů
+                                Zadejte prosím vaše číslo smlouvy pro zjištění platebních údajů
                             </label>
                             <input type="text" name="text" id="text" />
-                            <input type="submit" name="submit" id="submit" class="mainButton small" value="Vyhledat platební údaje" />
+
+                            <!--<input type="submit" name="submit" id="submit" class="mainButton small" value="Vyhledat platební údaje" />-->
+                            <a href="/prototyp/client_data.html" class="mainButton small"><span>Vyhledat platební údaje</span></a>
                             <div class="cleaner">&nbsp;</div>
                         </div>
 
@@ -101,61 +103,74 @@
     </div> <!-- /productBox -->
 
     <div class="container basicPadding">
-        <h3>Možnosti platby pojistného</h3>
+        <div class="contentLeft">
+            <h3>Možnosti platby pojistného</h3>
 
-        <h3 class="red fwb mb12">E-faktura</h3>
-        <p>
-            V rámci aplikace SERVICE 24 České spořitelny je pro vás k dispozici e-faktura - unikátní služba,<br />
-            která umožňuje přijímat faktury přímo do internetového bankovnictví.
-        </p>
+            <h3 class="red fwb mb12">E-faktura</h3>
+            <p>
+                V rámci aplikace SERVIS 24 České spořitelny je pro vás k dispozici e-faktura - unikátní služba,<br />
+                která umožňuje přijímat faktury přímo do internetového bankovnictví.
+            </p>
 
-        <p>
-            Tato služba je určena především pro klienty, kteří hradí pojistné jednorázovým příkazem k úhradě.
-        </p>
+            <p>
+                Tato služba je určena především pro klienty, kteří hradí pojistné jednorázovým příkazem k úhradě.
+            </p>
 
-        <p><strong>Aktivací služby e-faktura získáte:</strong></p>
-        <ul class="ulDefault smallFont">
-            <li>
-                Přehled na jednom místě – složenku nebo předpis platby budete mít uloženy v internetovém bankovnictví.
-            </li>
+            <p><strong>Aktivací služby e-faktura získáte:</strong></p>
+            <ul class="ulDefault smallFont">
+                <li>
+                    Přehled na jednom místě – složenku nebo předpis platby budete mít uloženy v internetovém bankovnictví.
+                </li>
 
-            <li>
-                Nezapomenete zaplatit pojistné – obdržíte upozornění o nutnosti zaplatit formou SMS nebo e-mailu.
-            </li>
+                <li>
+                    Nezapomenete zaplatit pojistné – obdržíte upozornění o nutnosti zaplatit formou SMS nebo e-mailu.
+                </li>
 
-            <li>
-                Platbu pošlete vždy na správný účet se správným variabilním symbolem – platební příkaz bude předvyplněn<br />
-                v internetovém bankovnictví a vy ho pouze potvrdíte.
-            </li>
+                <li>
+                    Platbu pošlete vždy na správný účet se správným variabilním symbolem – platební příkaz bude předvyplněn<br />
+                    v internetovém bankovnictví a vy ho pouze potvrdíte.
+                </li>
 
-            <li class="noBg">
-                Postup aktivace služby a další informace najdete zde. Jako zákaznické číslo zadejte číslo vaší pojistné smlouvy.
-            </li>
-        </ul>
+                <li class="noBg">
+                    Postup aktivace služby a další informace najdete zde. Jako zákaznické číslo zadejte číslo vaší pojistné smlouvy.
+                </li>
+            </ul>
 
-        <h3 class="red fwb mb12">Inkaso z účtu</h3>
+            <h3 class="red fwb mb12">Inkaso z účtu</h3>
 
-        <p>
-            Aktivujte si u své banky platbu inkasem z účtu a zbavíte se starostí se sledováním termínů plateb,<br />front na poštách a vysokých poplatků.
-        </p>
+            <p>
+                Aktivujte si u své banky platbu inkasem z účtu a zbavíte se starostí se sledováním termínů plateb,<br />front na poštách a vysokých poplatků.
+            </p>
 
-        <p class="fs15">
-            Poplatky za inkaso činí v bance 5 - 6 Kč*.<br />
-            *V případě poplatků za inkaso jde o obvyklou výši poplatku dle ceníku největších českých bank.
-        </p>
+            <p class="fs15">
+                Poplatky za inkaso činí v bance 5 - 6 Kč*.<br />
+                *V případě poplatků za inkaso jde o obvyklou výši poplatku dle ceníku největších českých bank.
+            </p>
 
-        <h3 class="red fwb mb12">SIPO</h3>
-        <p>
-            Jak zřídit SIPO
-        </p>
+            <p>
+                V PČS – aktuální výše poplatku za inkaso je uvedena v platném přehledu poplatků a parametrů produktu.
+            </p>
 
-        <ul class="ulDefault smallFont">
-            <li>Nemáte-li ještě spojovací číslo, zažádejte o ně v pobočce České pošty.</li>
-            <li>Nahlaste nám změnu způsobu platby a vaše spojovací číslo.</li>
-            <li class="noBg">Poplatek za hotovostní úhradu SIPA na České poště je 12 Kč. Za bezhotovostní úhradu SIPO inkasem z Vašeho účtu<br />u banky si Česká pošta poplatky nevybírá.</li>
-        </ul>
+            <p>
+                Na základě zákona č. 284/2009 Sb. o platebním styku, platného od 1. 11. 2009, vám doporučujeme ověřit si v bance maximální výši (limit) povolených inkasních plateb a časové období, během kterého může být tento maximální limit z vašeho účtu inkasován.
 
-        <a href="/prototyp/#" class="mb40">Přehled poplatků</a>
+            </p>
+
+            <h3 class="red fwb mb12">SIPO</h3>
+            <p>
+                Jak zřídit SIPO
+            </p>
+
+            <ul class="ulDefault smallFont">
+                <li>Nemáte-li ještě spojovací číslo, zažádejte o ně v pobočce České pošty.</li>
+                <li>Nahlaste nám změnu způsobu platby a vaše spojovací číslo.</li>
+                <li class="noBg">Poplatek za hotovostní úhradu SIPA na České poště je 12 Kč. Za bezhotovostní úhradu SIPO inkasem z Vašeho účtu<br />u banky si Česká pošta poplatky nevybírá.</li>
+            </ul>
+
+            <a href="/prototyp/#" class="mb40">Přehled poplatků</a>
+        </div>
+
+    </div> <!-- /cotainer -->
 
     <div class="cleaner">&nbsp;</div>
 </div> <!-- /content -->
@@ -174,11 +189,7 @@
                 <li><span>E-mail:</span> <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
             </ul>
 
-            <div class="socials">
-                <a href="/prototyp/#" class="fb">Facebook</a>
-                <a href="/prototyp/#" class="tw">Twitter</a>
-                <a href="/prototyp/#" class="play">Play</a>
-            </div>
+
         </div>
         <div class="cleaner">&nbsp;</div>
 
@@ -190,6 +201,7 @@
                     <li class="footerMenuTitle">Pro partnery</li>
                     <li><a href="/prototyp/#">Vstup do Extranetu</a></li>
                     <li><a href="/prototyp/#">Formuláře ke stažení</a></li>
+                    <li><a href="/prototyp/">aplikace FLEXI</a></li>
                 </ul>
 
                 <ul class="last">

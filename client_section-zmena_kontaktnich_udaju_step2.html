@@ -9,6 +9,7 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
 
     <script type="text/javascript" src="js/control.js"></script>
 
@@ -16,9 +17,11 @@
     <link rel="stylesheet" media="screen" href="css/default.css" />
     <link rel="stylesheet" media="screen" href="css/jquery.checkbox.css" />
     <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" media="screen" href="css/jquery.selectbox.css" />
+
     <script type="text/javascript" src="js/respond.js"></script>
 
-    <title>Klientská sekce - Zaslání potvrzovacího kódu | Flexi pojištění</title>
+    <title>Klientská sekce - Změna kontaktních údajů krok 2 | Flexi pojištění</title>
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" media="screen" href="css/ie.css" />
@@ -72,7 +75,7 @@
                         <li><a href="/prototyp/">úvod</a>></li>
                         <li><a href="/prototyp/">pro klienty</a>></li>
                         <li><a href="/prototyp/">má pojistka</a>></li>
-                        <li>pojištění rizikových sportů</li>
+                        <li>změna kontaktích údajů</li>
                     </ul>
                 </div> <!-- /breadcrumb -->
 
@@ -85,10 +88,10 @@
                 <div id="productInformation" class="mt20">
                     <ul class="newsLinks productNavigation">
                         <li><a href="/prototyp/client_section-zakladni_informace.html"><span>Základní údaje</span></a></li>
-                        <!--<li><a href="/prototyp/client_section-smlouva_1.html"><span>Pojistné smlouvy</span></a></li>
+                        <!--<li><a href="/prototyp/client_section-smlouva_1.html" class="active"><span>Pojistné smlouvy</span></a></li>
                         <li><a href="/prototyp/client_section-platby.html"><span>Platby</span></a></li>
                         <li><a href="/prototyp/client_section-plneni.html"><span>Plnění</span></a></li>-->
-                        <li><a href="/prototyp/clients_rizikove_sporty.html" class="active"><span>Pojištění rizikových sportů</span></a></li>
+                        <li><a href="/prototyp/clients_rizikove_sporty.html"><span>Pojištění rizikových sportů</span></a></li>
                         <li><a href="/prototyp/#"><span>Zprávy PČS</span><span class="number">4</span></a></li>
                     </ul>
 
@@ -101,22 +104,170 @@
     </div> <!-- /productBox -->
 
     <div class="container basicPadding">
-        <h2 class="blue">Zaslání potvrzovacího kódu</h2>
+        <h2 class="blue">Změna kontaktních údajů krok - krok 2 z 2</h2>
+        <p>
+            Údaje před odesláním pečlivě zkontrolujte. Změny jsou vyznačeně červeným tučným písmem.<br />
+            Pro potvrzení změn zadejte kód z autorizačni SMS (zaslaná na číslo 123 123 123).
+        </p>
+
+        <h3 class="red">Změny se projeví u smluv</h3>
+        <table class="detailTable detailTable2">
+            <tr>
+                <th>
+                    Číslo pojistné smlouvy
+                </th>
+                <th>
+                    Pojistný produkt
+                </th>
+                <th>
+                    Platnost do
+                </th>
+                <th>
+                    Stav
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    5500242487
+                </td>
+                <td>
+                    Flexibilní životní pojištění
+                </td>
+                <td>
+                    31.7. 2035
+                </td>
+                <td>
+                    Platná
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    5500242487
+                </td>
+                <td>
+                    Flexibilní životní pojištění
+                </td>
+                <td>
+                    31.7. 2035
+                </td>
+                <td>
+                    Platná
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    5500242487
+                </td>
+                <td>
+                    Flexibilní životní pojištění
+                </td>
+                <td>
+                    31.7. 2035
+                </td>
+                <td>
+                    Platná
+                </td>
+            </tr>
+        </table>
+
+        <h3 class="red mt35">Pojistník</h3>
+
+        <table class="detailTable detailTable2">
+            <tr>
+                <th>
+                    Titul, jméno, příjmení
+                </th>
+
+                <td>
+                    Ing, <span class="red">Osvald</span> Studovaný
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Rodné číslo
+                </th>
+
+                <td>
+                    5500242487
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Telefon
+                </th>
+
+                <td>
+                    123 123 123
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    E-mail
+                </th>
+
+                <td>
+                    osvald@bezmailu.cz
+                </td>
+            </tr>
+        </table>
+
+        <h3 class="red mt35">Adresa trvalého bydliště</h3>
+        <table class="detailTable detailTable2">
+            <tr>
+                <th>
+                    Ulice, číslo popisné
+                </th>
+
+                <td>
+                    Ing, <span class="red">Korunková 34</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Mésto, PSČ
+                </th>
+
+                <td>
+                    Penízkov, 731 01
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Stát
+                </th>
+
+                <td>
+                    Česká Republika
+                </td>
+            </tr>
+        </table>
 
         <form method="post" action="/form">
-            <div class="dataHolder mb40">
-                <div class="formRow">
-                    <label for="code">Číslo smlouvy pro kterou máte pojištění aktivováno</label>
+            <div class="itemsHolder wBorder">
+                <div class="formHolder">
+                    <label for="code">Kód z autorizační SMS (zaslána na 123 123 123)</label>
+                    <a href="#" class="fs15">zaslat SMS znova</a>
                     <input type="text" name="code" id="code" />
                     <div class="cleaner">&nbsp;</div>
-                </div> <!-- /formRow -->
-
-                <div class="submit">
-                    <input type="submit" id="submit" class="mainButton" name="submit" value="Odeslat" />
                 </div>
 
                 <div class="cleaner">&nbsp;</div>
-            </div> <!-- /dataHolder -->
+            </div>
+
+            <div class="submit">
+                <input type="submit" name="submit" class="mainButton fl" value="Odeslat změny" />
+
+                <a href="#" class="fl lh45 ml30">Zpět na úpravu dat</a>
+                <div class="cleaner">&nbsp;</div>
+            </div>
         </form>
 
         <div class="cleaner">&nbsp;</div>

@@ -171,6 +171,10 @@ p a:hover {
   font-weight: bold;
 }
 
+.fwn {
+  font-weight: normal;
+}
+
 .ml10 {
   margin-left: 10px;
 }
@@ -185,6 +189,10 @@ p a:hover {
 
 .dn {
   display: none;
+}
+
+.mr10 {
+  margin-right: 10px;
 }
 
 h2 {
@@ -950,6 +958,10 @@ h4 {
   }
 }
 
+.minMap {
+  position: relative;
+}
+
 #mainIn {
   background: #fff;
 }
@@ -966,13 +978,15 @@ h4 {
   box-shadow: 0 0 8px rgba(102,150,191,0.28);
   padding: 40px 0;
   margin-bottom: -30px;
+  position: relative;
+  z-index: 100;
 
   form {
 
     .inCenter {
       display: inline-block;
       margin: 0px auto;
-      width: 900px;
+      width: 490px;
     }
 
     label {
@@ -1092,9 +1106,9 @@ h4 {
     .branchItem {
       height: auto;
       padding: 0;
-      width: 168px;
-      padding: 40px 15px 30px 0;
-      margin-right: 15px;
+      width: 176px;
+      padding: 40px 10px 30px 0;
+      margin-right: 10px;
 
       .branchImage {
         width: 60px;
@@ -1127,6 +1141,22 @@ h4 {
       &.last {
         margin-right: 0;
         padding-right: 0;
+      }
+    }
+
+    &.forms {
+      .branchItem {
+        width: 306px;
+
+        .branchTitle {
+          font-size: 24px;
+          line-height: 27px;
+          min-height: 55px;
+        }
+
+        &.divider {
+          background: url("../images/signpostDividerBig.png") no-repeat right center;
+        }
       }
     }
   }
@@ -1615,6 +1645,10 @@ h4 {
   margin-left: 20px;
   width: 100%;
 
+  &.noPadding {
+    padding: 0;
+  }
+
   .data {
     li {
       margin-bottom: 10px;
@@ -1649,25 +1683,28 @@ h4 {
   table {
     width: 100%;
     border-collapse: collapse;
-    font-weight: normal;
-    font-size: 15px;
-    color: #424548;
-    margin-top: 40px;
-    margin-bottom: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 18px;
 
     tr {
-      th, td {
+      td {
+        height: 50px;
+        vertical-align: middle;
         text-align: left;
-        padding: 0 0 15px 0;
-        font-weight: normal;
-      }
+        padding: 0;
+        border-bottom: 1px solid #c7e0f3;
+        padding-left: 18px;
 
-      th {
-        color: #096abf;
+        &:last-child {
+          text-align: right;
+          padding-right: 18px;
+          padding-left: 0;
+        }
       }
 
       &:last-child td {
-        padding-bottom: 0;
+        border-bottom: 0;
       }
     }
   }
@@ -1907,7 +1944,24 @@ form {
 
     span {
       font-weight: normal;
+
+      &.star {
+        font-weight: bold;
+        color: #ed1b24;
+        font-size: 15px;
+      }
     }
+
+    &.default {
+      cursor: default;
+    }
+  }
+
+  .listItem {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    clear: both;
   }
 
   .formRow {
@@ -2010,7 +2064,7 @@ form {
     margin-left: 30px;
     margin-top: -5px;
     position: relative;
-    cursor: pointer;
+    cursor: help;
 
     .infoBubble {
       display: none;
@@ -2027,6 +2081,7 @@ form {
       box-shadow: 0px 0px 8px rgba(102, 150, 191, 0.28);
       z-index: 1001;
       background-color: #fff;
+      width: 250px;
     }
 
     &:hover .infoBubble {
@@ -2202,6 +2257,14 @@ form {
           line-height: 20px;
         }
       }
+    }
+  }
+
+  .itemCol {
+    margin-bottom: 20px;
+
+    &.last {
+      margin-bottom: 0;
     }
   }
 
@@ -3441,6 +3504,14 @@ table {
         height: 56px;
         border-bottom: 1px solid #c7e0f3;
         text-align: left;
+
+        a.black {
+          color: #424548;
+        }
+
+        span.red {
+          font-weight: bold;
+        }
       }
 
       th {
@@ -3469,6 +3540,15 @@ table {
           }
         }
 
+      }
+    }
+
+    &.hAuto {
+      tr {
+        td {
+          height: auto;
+          padding: 20px 0;
+        }
       }
     }
   }
@@ -3704,6 +3784,17 @@ ul {
     padding: 0;
   }
 
+  .addressFinder {
+    form {
+
+      .inCenter {
+        display: inline-block;
+        margin: 0px auto;
+        width: 900px;
+      }
+    }
+  }
+
   .addressContact {
     margin-left: 100px;
   }
@@ -3785,7 +3876,7 @@ ul {
   }
 
   .evaluationLeft {
-    float: right;
+    float: left;
     margin-right: 90px;
   }
 
@@ -3960,12 +4051,12 @@ ul {
 
   #needsNavigation {
     .needBox {
-      width: 204px;
+      width: 206px;
       padding: 27px 15px 20px 15px;
 
       .needTitle {
-        line-height: 30px;
-        min-height: 60px;
+        line-height: 18px;
+        font-size: 22px;
       }
 
       .needText {
@@ -4133,10 +4224,10 @@ ul {
 
   #needsNavigation {
     .needBox {
-      width: 216px;
+      width: 217px;
+
       .needTitle {
-        line-height: 18px;
-        min-height: 0;
+        font-size: 24px;
       }
 
       .needText {
