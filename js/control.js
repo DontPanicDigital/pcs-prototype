@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $("#menuHolder").load("menu.html");
+    $("#footer").load("footer.html");
     fixedButton();
     hoverImage();
     accessibleDropDown();

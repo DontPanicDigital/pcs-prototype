@@ -1,4 +1,5 @@
 #mainIn {
     position: relative;
     z-index: 500;
+    background: transparent;
 }

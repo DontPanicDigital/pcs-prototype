@@ -18,7 +18,7 @@
     <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
     <script type="text/javascript" src="js/respond.js"></script>
 
-    <title>Klientská sekce - Registrace | Flexi pojištění</title>
+    <title>Klientská sekce - Info | Flexi pojištění</title>
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" media="screen" href="css/ie.css" />
@@ -63,61 +63,50 @@
     </div> <!-- /container -->
 </div> <!-- /header -->
 
-<div id="content" class="pt40">
-    <div class="container basicPadding">
-        <div id="breadcrumb">
-            <ul>
-                <li><a href="/prototyp/">úvod</a>></li>
-                <li><a href="/prototyp/">pro klinety</a>></li>
-                <li><a href="/prototyp/">má pojistka</a>></li>
-                <li>přihlášení</li>
-            </ul>
-        </div> <!-- /breadcrumb -->
+<div id="content">
+    <div class="productBox padZero">
+        <div class="container">
+            <div class="productBoxIn">
+                <div id="breadcrumb">
+                    <ul>
+                        <li><a href="/prototyp/">úvod</a>></li>
+                        <li><a href="/prototyp/">pro klienty</a>></li>
+                        <li><a href="/prototyp/">má pojistka</a>></li>
+                        <li>informace</li>
+                    </ul>
+                </div> <!-- /breadcrumb -->
+
+                <ul class="loginBox">
+                    <li><a href="#">nastavení účtu</a></li>
+                    <li><a href="#">odhlásit</a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+
+                <div id="productInformation" class="mt20">
+                    <ul class="newsLinks productNavigation">
+                        <li><a href="/prototyp/client_section-zakladni_informace.html"><span>Základní údaje</span></a></li>
+                        <!--<li><a href="/prototyp/client_section-smlouva_1.html"><span>Pojistné smlouvy</span></a></li>
+                        <li><a href="/prototyp/client_section-platby.html"><span>Platby</span></a></li>
+                        <li><a href="/prototyp/client_section-plneni.html"><span>Plnění</span></a></li>-->
+                        <li><a href="/prototyp/clients_rizikove_sporty.html"><span>Pojištění rizikových sportů</span></a></li>
+                        <li><a href="/prototyp/#"><span>Zprávy PČS</span><span class="number">4</span></a></li>
+                    </ul>
+
+                    <div class="cleaner">&nbsp;</div>
+                </div> <!-- /productInformation -->
+            </div> <!-- /productBoxIn -->
+        </div> <!-- / container -->
 
         <div class="cleaner">&nbsp;</div>
+    </div> <!-- /productBox -->
 
-        <h2 class="red mt35 fs36 mb30">Má pojistka - registrace</h2>
-        <p>
-            Registrace je určena pro ... a umožní vám to a to....<br />
-            Po odeslání registrace vám bude poštou dotučeno heslo do xy dní.
-        </p>
-
-        <form method="post" action="/form">
-            <div class="dataHolder mb40">
-                <div class="formRow">
-                    <label for="number">Číslo smlouvy</label>
-                    <input type="text" name="number" id="number" />
-                    <div class="cleaner">&nbsp;</div>
-                </div> <!-- /formRow -->
-
-                <div class="formRow">
-                    <label for="rc">Rodné číslo</label>
-                    <input type="text" name="rc" id="rc" />
-                    <div class="cleaner">&nbsp;</div>
-                </div> <!-- /formRow -->
-
-                <div class="formRow">
-                    <label for="phone2">Mobilní telefon</label>
-                    <input type="text" name="phone1" id="phone1" class="small1" value="+420" />
-                    <input type="text" name="phone2" id="phone2" class="small2" />
-                    <div class="cleaner">&nbsp;</div>
-                </div> <!-- /formRow -->
-
-                <div class="formRow">
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" />
-                    <div class="cleaner">&nbsp;</div>
-                </div> <!-- /formRow -->
-
-                <div class="submit">
-                    <!--<input type="submit" id="submit" class="mainButton" name="submit" value="Přihlásit se" />-->
-                    <a href="/prototyp/client_section-registrace2.html" class="mainButton"><span>Přihlásit se</span></a>
-                </div>
-
-                <div class="cleaner">&nbsp;</div>
-            </div> <!-- /dataHolder -->
-        </form>
-
+    <div class="container basicPadding">
+        <div class="noticeBox information mb40">
+            <h2 class="fs36">Informační hláška</h2>
+            <p>
+                Popis toho co se stalo....
+            </p>
+        </div> <!-- noticeBox -->
         <div class="cleaner">&nbsp;</div>
     </div> <!-- /container -->
 
