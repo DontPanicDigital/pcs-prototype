@@ -18,7 +18,7 @@
     <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
     <script type="text/javascript" src="js/respond.js"></script>
 
-    <title>Kalkulačka pojištění na míru první krok | Flexi pojištění</title>
+    <title>Kalkulačka pojištění na míru druhý krok | Flexi pojištění</title>
 
     <!--[if lte IE 9]>
     <link rel="stylesheet" media="screen" href="css/ie.css" />
@@ -388,15 +388,120 @@
     </div> <!-- /itemRow -->
 </div> <!-- /itemsHolder -->
 
-<a href="calculator_na_miru_2.html" class="mainButton mb40">
-    <span>Spočítat pojištění</span>
-</a>
+<h3 class="red mt50">Vaše pojistné <span>(částku můžete změnit)</span></h3>
+<div class="itemsHolder different">
+    <div class="itemRow first checkedCheckbox">
+        <div id="monthlyPaymentAnchor">
+            <label for="price">Měsíční pojistné</span></label>
+            <input type="text" name="price" id="price" value="1100"/>
+            <span class="afterInput">Kč</span>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+        <div class="cleaner">&nbsp;</div>
+    </div>
+</div> <!-- /itemsHolder -->
+
+<h3 class="red">Kromě jistoty zajištění rodiny získáte</h3>
+
+<table class="w480">
+    <tr>
+        <th>
+            Celkem můžete v 75 letech získat:
+        </th>
+        <td>75 066 Kč</td>
+        <td class="moreLink">
+            <a href="#" class="moreBonusLink fs15 fwn">Více informací</a>
+        </td>
+    </tr>
+
+    <tr class="moreBonus">
+        <td colspan="2">
+            <table>
+                <tr>
+                    <th>Bonus za bezeškodní průběh</th>
+                    <td>30 472 Kč</td>
+                </tr>
+
+                <tr>
+                    <th>Bonus za věrnost</th>
+                    <td>10 008 Kč</td>
+                </tr>
+
+                <tr>
+                    <th>
+                        Kapitálová hodnota v 75 letech
+                    </th>
+                    <td>34 586 Kč</td>
+                </tr>
+            </table>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<p class="afterTable">
+    Uvedený výpočet je proveden pro 1. rizikovou skupinu a je pouze orientační. Pro přesné nastavení své pojistky se obraťte<br />
+    na jakoukoli pobočku České spořitelny nebo na naše externí obchodní partnery.
+</p>
+
+<h2 class="red">Mám zájem o toto pojištění, kontaktujte mě</h2>
+
+<div id="contactFormHolder">
+    <form action="/form" method="pos">
+        <div class="formRow">
+            <label for="name">Jméno a příjmení</label>
+            <input type="text" name="name" id="name" class="bigger"/>
+
+            <div class="cleaner">&nbsp;</div>
+        </div>
+
+        <div class="formRow">
+            <div class="col">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email"/>
+            </div>
+
+            <div class="col">
+                <label for="phone">Telefon</label>
+                <input type="text" name="phone" id="phone"/>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+
+        <div class="formRow">
+            <div class="col">
+                <label for="village">Obec</label>
+                <input type="text" name="village" id="village"/>
+            </div>
+
+            <div class="col">
+                <label for="zip">PSČ</label>
+                <input type="text" name="zip" id="zip"/>
+            </div>
+            <div class="cleaner">&nbsp;</div>
+        </div>
+
+        <div class="submit">
+            <!--<input type="submit" name="submit" id="submit" class="mainButton" value="Spočítat pojištění" />-->
+            <a href="/prototyp/calculator_na_miru_3.html" class="mainButton">
+                <span>Odeslat žádost o schůzku</span>
+            </a>
+        </div>
+    </form>
+
+    <div class="cleaner">&nbsp;</div>
+</div>
+
 </form>
 
 
 <div class="cleaner">&nbsp;</div>
 </div>
 
+<div class="linksHolder">
+    <a href="/prototyp/#" class="print">Vytisknout toto pojištění</a>
+    <a href="/prototyp/#" class="pdf">Stáhnout jako PDF</a>
+</div>
 </div>
 
 

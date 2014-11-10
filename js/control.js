@@ -6,20 +6,29 @@ $(document).ready(function() {
     accessibleDropDown();
     showDetail();
     showOtherText();
+    showBounus();
+    showChildAge();
 
-    $( ".firstTable" ).click(function() {
+    setTimeout(function () {
+        monthlyPaymentShow();
+    }, 3000);
+
+    helpBubbleShow();
+    checkedCheckboxes();
+
+    $(".firstTable").click(function () {
         $('#divAlokace1').toggle();
         return false;
     });
 
-    $( ".secondTable" ).click(function() {
+    $(".secondTable").click(function () {
         $('#divAlokace2').toggle();
         return false;
     });
 
     $('input:checkbox').checkbox();
     $('input:radio').checkbox({
-        cls:'jquery-radio'
+        cls: 'jquery-radio'
     });
 
     $("select").selectbox();
@@ -35,6 +44,75 @@ $(document).ready(function() {
         speed: 1000
     });
 });
+
+function monthlyPaymentShow() {
+    if($("#monthlyPaymentAnchor").length > 0) {
+        var offMonthlyTop = $("#monthlyPaymentAnchor").offset();
+        var heightMonthlyElement = $("#monthlyPaymentAnchor").height();
+        var offMonthlyBottom = offMonthlyTop.top + heightMonthlyElement;
+
+
+        $(window).scroll(function() {
+            var windowScroll2 = $(window).scrollTop();
+            if(windowScroll2 > offMonthlyBottom) {
+                $("#monthlyPayment").fadeIn();
+            }
+            else {
+                $("#monthlyPayment").fadeOut();
+            }
+        });
+    }
+}
+
+function showChildAge() {
+    if ($('#childCheckbox').is(':checked')) {
+        $('#showChildAge').show();
+    }
+
+    $('#childCheckbox').click(function() {
+        if ($(this).is(':checked')) {
+            $('#showChildAge').show();
+        }
+        else{
+            $('#showChildAge').hide();
+        }
+    });
+}
+
+function checkedCheckboxes() {
+    $('.itemsHolder input[type=checkbox]').each(function() {
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('checkedCheckbox');
+        }
+    });
+
+    $('.itemsHolder input[type=checkbox]').on('click', function(){
+        if ($(this).is(':checked')) {
+            $(this).parent().addClass('checkedCheckbox');
+        }
+        else {
+            $(this).parent().removeClass('checkedCheckbox');
+        }
+    });
+}
+
+function helpBubbleShow() {
+    if($(".helpBubble").length > 0) {
+        var offTop = $("#anchor").offset().top;
+        $(window).scroll(function() {
+            var windowScroll = $(window).scrollTop();
+            if(windowScroll >= offTop && $(".helpBubble").hasClass('hide')) {
+                $(".helpBubble").fadeIn();
+            }
+        });
+
+        $(".helpBubble .close").click(function() {
+            $('.helpBubble').fadeOut();
+            $('.helpBubble').removeClass('hide');
+            return false;
+        });
+    }
+}
 
 function showOtherText() {
     $('.hideText').addClass('hide');
@@ -77,6 +155,24 @@ function accessibleDropDown() {
     });
 }
 
+function showBounus() {
+    $("table tr.moreBonus").addClass('hide');
+    $( ".moreBonusLink" ).click(function() {
+        if($(this).closest('table').find('.moreBonus').hasClass('hide')) {
+            $(this).closest('table').find('.moreBonus').slideDown('fast');
+            $(this).closest('table').find('.moreBonus').removeClass('hide');
+            $(this).addClass('arrowUp');
+        }
+
+        else {
+            $(this).closest('table').find('.moreBonus').slideUp('fast');
+            $(this).closest('table').find('.moreBonus').addClass('hide');
+            $(this).removeClass('arrowUp');
+        }
+        return false;
+    });
+}
+
 function showDetail() {
     $("table tr.detail").addClass('hide');
 
@@ -94,7 +190,6 @@ function showDetail() {
         }
         return false;
     });
-
 }
 
 function hoverImage() {

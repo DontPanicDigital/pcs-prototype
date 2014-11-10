@@ -1066,7 +1066,7 @@ h4 {
     color: #096abf;
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     display: block;
   }
 
@@ -1403,6 +1403,16 @@ h4 {
 
     .small {
       font-size: 15px;
+    }
+
+    &.afterTable {
+      padding-top: 10px;
+      font-weight: bold;
+      font-size: 11px;
+      color: #424548;
+      line-height: 15px;
+      font-size: 11px;
+      margin-bottom: 30px;
     }
   }
 
@@ -1968,6 +1978,10 @@ form {
     margin-bottom: 25px;
   }
 
+  #showChildAge {
+    display: none;
+  }
+
   .col {
     float: left;
 
@@ -2240,6 +2254,7 @@ form {
 .itemsHolder {
   width: 100%;
   margin-bottom: 50px;
+  position: relative;
 
   &.different {
     .itemRow {
@@ -2247,23 +2262,56 @@ form {
         width: auto;
         display: inline-block;
         margin-bottom: 5px;
+        color: #81a5c5;
       }
 
       input[type="text"] {
         clear: both;
       }
 
+      .afterInput {
+        color: #898f95;
+      }
+
       .inputInfo {
         float: right;
         line-height: 29px;
         font-size: 15px;
-        color: #6a6f74;
+        color: #b0b7be;
         width: auto;
         text-align: left;
 
         .answ {
           display: block;
           line-height: 20px;
+        }
+      }
+    }
+
+    .checkedCheckbox {
+      label {
+        color: #096abf;
+      }
+
+      .afterInput {
+        color: #424548;
+      }
+
+      .inputInfo {
+        color: #6a6f74;
+      }
+
+      &.errorRow {
+        label {
+          color: #ff0000;
+        }
+
+        input[type="text"] {
+          border: 1px solid #ff0000;
+        }
+
+        .afterInput {
+          color: #ff0000;
         }
       }
     }
@@ -2279,7 +2327,8 @@ form {
 
   .itemRow {
     border-bottom: 1px solid #c7e0f3;
-    padding: 20px 35px 20px 0;
+    padding: 20px 0 20px 0;
+    position: relative;
 
     &.first {
       border-top: 1px solid #c7e0f3;
@@ -2289,8 +2338,28 @@ form {
       border-bottom: 0;
     }
 
+    .errorBox {
+      position: absolute;
+      right: 0;
+      top: 53px;
+      background: #e23c43;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      padding: 6px 10px;
+      width: 320px;
+      font-size: 15px;
+      color: #000000;
+
+      .arrow {
+        position: absolute;
+        left: -5px;
+        top: 10px;
+      }
+    }
+
     label {
-      width: 275px;
+      width: 265px;
       margin: 0;
       line-height: 29px;
 
@@ -2383,6 +2452,11 @@ form {
       margin-left: 20px;
     }
   }
+
+  .jquery-checkbox {
+    margin-top: 4px;
+    margin-right: 6px;
+  }
 }
 
 table {
@@ -2406,6 +2480,32 @@ table {
 
     td {
       text-align: right;
+
+      &.moreLink {
+        width: 125px;
+
+        .moreBonusLink {
+          &:after {
+            content: "";
+            background: url("../images/linkArrow.png") no-repeat left bottom;
+            margin-left: 7px;
+            margin-top: 7px;
+            float: right;
+            width: 8px;
+            height: 5px;
+          }
+
+          &.arrowUp {
+            &:after {
+              background-position: left top;
+            }
+          }
+        }
+      }
+    }
+
+    &.moreBonus {
+      display: none;
     }
   }
 
@@ -2413,12 +2513,13 @@ table {
     width: 355px;
   }
 
-  .afterTable {
-    padding-top: 10px;
-    font-weight: bold;
-    font-size: 11px;
-    color: #424548;
-    line-height: 15px;
+  &.w480 {
+    width: 480px;
+    margin-bottom: 10px;
+
+    table {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -3592,6 +3693,47 @@ table {
       background: url("../images/information.png") no-repeat 20px 10px;
     }
   }
+
+  .helpBubble {
+    width: 227px;
+    border: 1px solid #ffffff;
+    -webkit-box-shadow: 0 0 8px rgba(102, 150, 191, 0.28);
+    -moz-box-shadow:    0 0 8px rgba(102, 150, 191, 0.28);
+    box-shadow:         0 0 8px rgba(102, 150, 191, 0.28);
+    padding: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    position: absolute;
+    right: 0;
+    top: -15px;
+    z-index: 200;
+    background: rgba(241,250,254,0.9);
+    display: none;
+
+    .close {
+      text-decoration: none;
+      display: block;
+      position: absolute;
+      right: -12px;
+      top: -12px;
+    }
+
+    .title {
+      font-size: 15px;
+      color: #096abf;
+      font-weight: bold;
+      line-height: 21px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #096abf;
+      font-size: 15px;
+      line-height: 17px;
+      padding: 0;
+    }
+  }
 }
 
 .fixed {
@@ -3705,6 +3847,37 @@ ul {
 
   &.blue {
     color: #2a7ec7;
+  }
+}
+
+#monthlyPayment {
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  box-shadow: 0 1px 0 rgba(194,217,235,0.75);
+  -webkit-box-shadow: 0 1px 0 rgba(194,217,235,0.75);
+  -moz-box-shadow: 0 1px 0 rgba(194,217,235,0.75);
+  display: none;
+  color: #096abf;
+  font-size: 18px;
+  font-weight: bold;
+
+  span {
+    color: #424548;
+  }
+
+  &:after {
+    content: "";
+    background: url("../images/shadowTop.png") no-repeat center top;
+    width: 100%;
+    height: 14px;
+    display: block;
+    position: absolute;
+    bottom: -14px;
   }
 }
 
@@ -4129,13 +4302,22 @@ ul {
         right: 0;
       }
     }
+
+    &.branch {
+      .branchItem {
+        &.dividerShadow:after {
+          right: -6px;
+          z-index: 300;
+        }
+      }
+    }
   }
 
   .itemsHolder {
     &.different {
       .itemRow {
         label {
-          width: 275px;
+          width: 265px;
           margin: 0;
           line-height: 29px;
 
@@ -4149,7 +4331,8 @@ ul {
         }
 
         .inputInfo {
-          width: 295px;
+          width: auto;
+          float: right;
         }
       }
     }
@@ -4171,6 +4354,12 @@ ul {
             width: 16%;
           }
         }
+      }
+    }
+
+    .itemRow {
+      .errorBox {
+        top: 20px;
       }
     }
   }
