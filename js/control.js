@@ -92,6 +92,7 @@ function checkedCheckboxes() {
         }
         else {
             $(this).parent().removeClass('checkedCheckbox');
+            $(this).parent().find('input[type=text]').val(0);
         }
     });
 }

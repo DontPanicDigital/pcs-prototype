@@ -139,7 +139,7 @@
 
 <div id="monthlyPayment">
     <div class="container basicPadding">
-        Měsíční pojistné: <span>1&nbsp;000&nbsp;Kč</span>
+        Měsíční pojistné: <span>1&nbsp;100&nbsp;Kč</span>
     </div> <!-- /container -->
 </div> <!-- /monthlyPayment -->
 
@@ -156,7 +156,7 @@
     příslušného údaje.
 </p>
 
-<a href="/prototyp/#" class="linkArrow mb40">Více informaci o pojištění</a>
+<a href="/prototyp/#" class="linkArrow mb40">Více informací o pojištění</a>
 
 <!--<h3>Vypočtené částky si můžete upravit dle svých potřeb</h3>-->
 
@@ -176,21 +176,20 @@
 
 <div class="checkboxes">
     <div class="inLeft">
-        <input type="checkbox" name="check" id="check" checked="checked" />
-        <label for="check">Chci pojistit dítě</label>
+        <input type="checkbox" name="childCheckbox" id="childCheckbox" checked="checked" />
+        <label for="childCheckbox">Chci pojistit dítě</label>
     </div>
 
-    <div class="inRight">
+    <div id="showChildAge" class="inRight">
         <label for="child">Věk dítěte</label>
-        <input type="text" name="child" id="child" />
+        <input type="text" name="child" id="child" value="8" />
         <span class="afterInput">let</span>
-            <span class="icoInformation">
-                 <img src="images/icoInformation.png" alt="information" />
-                <span class="infoBubble">Pokud je vaše dítě mladší než 1 rok zadejte 0</span>
-            </span>
+                                    <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
+                                        <span class="infoBubble">Pokud je vaše dítě mladší než 1 rok zadejte 0</span>
+                                    </span>
         <div class="cleaner">&nbsp;</div>
         Vypočtené částky pro pojištění dítěte naleznete<br />
-        pod částkami zajištění váší osoby.
+        pod částkami zajištění vaší osoby.
     </div>
 </div>
 
@@ -286,7 +285,7 @@
 
     <div class="itemRow">
         <input type="checkbox" name="incident" id="incident" />
-        <label for="incident">Travalé následky úrazu &mdash; 0,5%</label>
+        <label for="incident">Trvalé následky úrazu &mdash; 0,5%</label>
         <input type="text" name="incidentInput" id="incident" value="500 000"/>
         <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />

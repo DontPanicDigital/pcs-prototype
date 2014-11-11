@@ -2074,6 +2074,12 @@ form {
     font-family: 'Source Sans Pro', sans-serif;
     margin-left: 10px;
     line-height: 29px;
+
+    &.free span {
+      font-weight: normal;
+      font-size: 15px;
+      color: #096abf;
+    }
   }
 
   .afterLink {
@@ -3887,6 +3893,17 @@ ul {
   }
 }
 
+#anchor {
+  clear: both;
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -4331,7 +4348,7 @@ ul {
         }
 
         .inputInfo {
-          width: auto;
+          max-width: 310px;
           float: right;
         }
       }
