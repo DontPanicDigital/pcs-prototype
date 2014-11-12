@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Don't Panic, s.r.o.">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" media="screen" href="css/default.css" />
+
+        <title>Úvodní stránka | Flexi pojištění microsite</title>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/respond.js"></script>
+
+    </head>
+    <body>
+        <div id="main">
+            <div id="shadow">
+                <div id="header">
+                    <div class="container">
+                        <h1 id="logo">
+                            <a href="/" title="flexi životní pojištění">
+                                <img src="images/logo.png" alt="logo" />
+                                <span>flexi životní pojištění</span>
+                            </a>
+                        </h1>
+                        <a href="http://www.pojistovnacs.cz/" id="pcsLogo" title="Pojišťovna České spořitelny" target="_blank">
+                            <img src="images/pcsLogo.png" alt="PCS" />
+                        </a>
+
+                        <ul id="menu">
+                            <li><a href="#" class="active">O akci</a></li>
+                            <li><a href="#">Příklad</a></li>
+                            <li><a href="#">Jak sjednat</a></li>
+                        </ul>
+                    </div> <!-- /container -->
+                </div> <!-- /header -->
+
+                <div id="campaign">
+                    <div class="container basicPadding">
+                        <div class="campaignText">
+                            <div class="campaignTitle">
+                                <span>„</span> Hlavní claim kampaně<br />
+                                může být i delší text<span>“</span>
+                            </div>
+
+                            <a href="/prototyp/" class="mainButton"><span>Hlavní akce stránky</span></a>
+
+                            <p>
+                                Dodatek pokud je potřeba nějaká podmínka<br />
+                                menším písmem...
+                            </p>
+                        </div> <!-- /campaignText -->
+                    </div> <!-- /container -->
+                </div> <!-- /campaignText -->
+
+                <div class="container">
+                    <div class="holder">
+                        <h2>O akci</h2>
+
+                        <ul class="ulDefault">
+                            <li>Vztahuje se na riziko <strong>invalidity 3. stupně</strong> způsobené úrazem.</li>
+                            <li>Akce je určena pro <strong>inově sjednané smlouvy FLEXI životního pojištění</strong>i a úpravy smlouvy v programu InSpiral.</li>
+                            <li><strong>Výhodu garantujeme po celou dobu trvání pojištění,</strong>i a to i v případě změny pojistných částek.</li>
+                            <li>Celosvětová platnost.</li>
+                            <li>Vyplatíme dvojnásobné plnění, maximálně 1 milion Kč navíc.</li>
+                        </ul>
+                    </div>
+                </div> <!-- /container -->
+
+                <div class="container basicPadding">
+                    <h2>Příklad</h2>
+                    <p>
+                        Klient si 15. září 2014 sjedná novou smlouvu s pojištěním invalidity 3. stupně z důvodu úrazu<br />
+                        <strong>na pojistnou částku 750 000 Kč.</strong> Po půl roce má těžkou dopravní nehodu, následkem které bude<br />
+                        uznán plně invalidním.
+                    </p>
+
+                    <h3>Jak by vypadalo pojistné plnění?</h3>
+
+                    <div class="tableHolder">
+                        <table>
+                            <tr>
+                                <td class="first">
+                                    Pojištění invalidity následkem úrazu
+                                </td>
+                                <td class="second">
+                                    <span class="blue">Plnění bez akce</span>
+                                    750 000 Kč
+                                </td>
+
+                                <td class="third">
+                                    <span class="blue">Plnění s akcí</span>
+                                    1 500 000 Kč
+
+                                    <span class="red">
+                                        S akcí pojišťovna
+                                        vyplatí dvojnásobek
+                                        - až o 1 milion Kč více
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div> <!-- /tableHolder -->
+
+                    <h2>Jak sjednat pojistku se zvýhodněním</h2>
+                    <p>
+                        FLEXI životní pojištění můžete snadno během jedné návštěvy sjednat:
+                    </p>
+
+                    <ul class="ulDefault">
+                        <li>Na jakékoliv <a href="#">pobočce České spořitelny</a></li>
+                        <li>U <a href="#">externích partnerů Pojišťovny České spořitelny</a></li>
+                    </ul>
+
+                    <p class="mt20">
+                        Zvýhodnění získáte automaticky při splnění výše uvedených podmínek.
+                    </p>
+                </div> <!-- /container -->
+            </div> <!-- /shadow -->
+        </div> <!-- /main -->
+
+        <div id="footer">
+            <div class="container basicPadding">
+                <div class="footerTitle">
+                    Máte dotaz či připomínku? Dejte nám vědět.
+                </div>
+                <ul>
+                    <li class="first">Klientská linka: 956 777 222</li>
+                    <li>E-mail: <a href="mailto:info@pojistovnacs.cz">info@pojistovnacs.cz</a></li>
+                </ul>
+                <div class="cleaner">&nbsp;</div>
+
+                <form method="post" action="/form">
+                    <div class="formRow">
+                        <label for="query">Dotaz</label>
+                        <textarea name="query" id="query" rows="10" cols="50"></textarea>
+                    </div>
+
+                    <div class="formRow">
+                        <label for="email">Váš e-mail či telefon</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" name="submit" class="mainButton" value="Odeslat" />
+                    </div> <!-- /submit -->
+                </form>
+                <div class="cleaner">&nbsp;</div>
+                <a href="#" class="link">Další informace o FLEXI životním pojištění</a>
+            </div>
+        </div> <!-- /footer -->
+    </body>
+</html>

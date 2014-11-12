@@ -1401,8 +1401,13 @@ h4 {
     font-size: 18px;
     line-height: 21px;
 
+    &.fs15 {
+      padding-bottom: 10px;
+    }
+
     .small {
       font-size: 15px;
+      padding-bottom: 10px;
     }
 
     &.afterTable {
@@ -2552,6 +2557,11 @@ table {
     }
   }
 
+  .labelInput {
+    margin-top: 30px;
+    float: left;
+  }
+
   .formRow {
     margin-bottom: 20px;
   }
@@ -3000,6 +3010,11 @@ table {
 
       &:last-child th, &:last-child td {
         border-bottom: 0;
+      }
+
+      &.highlight td {
+        background: #ceeaf8;
+        font-weight: bold;
       }
     }
   }
@@ -4001,7 +4016,7 @@ ul {
       .inCenter {
         display: inline-block;
         margin: 0px auto;
-        width: 900px;
+        width: 905px;
       }
     }
   }
