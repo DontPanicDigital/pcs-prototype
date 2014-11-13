@@ -15,6 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" media="screen" href="css/default.css" />
     <link rel="stylesheet" media="screen" href="css/jquery.checkbox.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
     <link rel="stylesheet" media="screen" href="css/jquery.bxslider.css" />
     <script type="text/javascript" src="js/respond.js"></script>
 
@@ -187,7 +188,7 @@
                             </div>
 
                             <div class="formRow">
-                                <label for="price2">Měsíční příjem</label>
+                                <label for="price2">Čistý měsíční příjem</label>
                                 <input type="text" name="price2" id="price2" value="16350" />
                                 <span class="afterInput">Kč (bude použit pouze pro výpočet)</span>
                                 <div class="cleaner">&nbsp;</div>
@@ -226,7 +227,7 @@
                                     </div>
                                     <p>
                                         Všechny částky můžete
-                                        upravit výše pojistnéhobude
+                                        upravit výše pojistného bude
                                         automaticky přepočítána.
                                     </p>
                                 </div> <!-- /helpBubble -->
@@ -262,7 +263,7 @@
                                 <div class="itemRow">
                                     <div class="itemCol">
                                         <input type="checkbox" name="inv" id="inv" />
-                                        <label for="inv">Invalidita <span>3. stupeň s klesající PČ</span></label>
+                                        <label for="inv">Invalidita <span>3. stupně s klesající PČ</span></label>
                                         <input type="text" name="invInput" id="invInput" value="350 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
@@ -270,13 +271,13 @@
                                                 částka, která bude vyplacena zvolené osobě v případě smrti pojištěného zapříčiněné úrazem; v případě smrti následkem úrazu se sčítá s částkou pro pojištění smrti z jakýchkoli příčin
                                             </span>
                                         </span>
-                                        <span class="inputInfo">Invalidní vozík stojí 150 000 Kč</span>
+                                        <span class="inputInfo">Přestavba bytu 2+1 na bezbariérový stojí cca 650&nbsp;000 Kč</span>
                                         <div class="cleaner">&nbsp;</div>
                                     </div>
 
                                     <div class="itemCol">
                                         <input type="checkbox" name="inv2" id="inv2" checked="checked" />
-                                        <label for="inv2">Invalidita <span>2. stupeň s klesající PČ</span></label>
+                                        <label for="inv2">Invalidita <span>2. stupně s klesající PČ</span></label>
                                         <input type="text" name="invInput2" id="invInput2" value="250 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="inputInfo">&nbsp;</span>
@@ -285,7 +286,7 @@
 
                                     <div class="itemCol last">
                                         <input type="checkbox" name="inv3" id="inv3" />
-                                        <label for="inv3">Invalidita <span>1. stupeň s klesající PČ</span></label>
+                                        <label for="inv3">Invalidita <span>1. stupně s klesající PČ</span></label>
                                         <input type="text" name="invInput3" id="invInput3" value="300 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="inputInfo">&nbsp;</span>
@@ -305,7 +306,7 @@
 
                                 <div class="itemRow errorRow">
                                     <input type="checkbox" name="incident" id="incident" checked="checked" />
-                                    <label for="incident">Trvalé následky úrazu &mdash; 0,5%</label>
+                                    <label for="incident">Trvalé následky úrazu &mdash; od 0,5%</label>
                                     <input type="text" name="incidentInput" id="incident" value="500 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
@@ -412,7 +413,8 @@
                                 </div> <!-- /itemRow -->
                             </div> <!-- /itemsHolder -->
 
-                            <h3 class="red">Kromě jistoty zajištění rodiny získáte</h3>
+                            <h3 class="red mb10">Kromě jistoty zajištění rodiny získáte</h3>
+                            <h4 class="mb30">Zdarma pojištění rizikových sportů na 30 dní za rok</h4>
 
                             <table class="w480">
                                 <tr>

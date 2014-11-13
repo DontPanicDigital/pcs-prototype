@@ -1,0 +1,33 @@
+#header, #footer, #menu, .productBox, .subPage #content .helpBubble, #monthlyPayment {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #424548;
+}
+
+form input[type="text"] {
+    border: 0;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    float: none;
+    height: auto;
+    background: none;
+    font-weight: bold;
+    display: inline;
+    clear: none;
+    text-indent: 0;
+    text-align: right;
+}
+
+form .afterInput {
+    float: none;
+    display: inline;
+    margin: 0;
+    line-height: normal;
+}

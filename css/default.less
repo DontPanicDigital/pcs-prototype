@@ -2059,11 +2059,6 @@ form {
     &.w343 {
       width: 343px !important;
     }
-
-    &.calculated {
-      font-weight: bold;
-      color: #ed1c24;
-    }
   }
 
   .helpInput {
@@ -2085,6 +2080,14 @@ form {
       font-size: 15px;
       color: #096abf;
     }
+  }
+
+  .onlyNumber {
+    display: block;
+    color: #ed1c24;
+    font-weight: bold;
+    clear: both;
+    font-size: 18px;
   }
 
   .afterLink {
@@ -3217,9 +3220,8 @@ table {
         }
       }
 
-      td {
+      td, th {
         font-size: 18px;
-        text-align: left;
 
         &.firstCol {
           width: 32%;
@@ -3306,6 +3308,29 @@ table {
         table tr:last-child td {
           border-bottom: 0;
         }
+      }
+    }
+  }
+
+  .bank {
+    td, th {
+      width: auto;
+      text-align: left;
+      vertical-align: top;
+      line-height: 21px;
+
+      &:first-child {
+        width: 25%;
+      }
+    }
+  }
+
+  .threeCol {
+    td, th {
+      width: auto;
+
+      &.col {
+        width: 20%;
       }
     }
   }
@@ -3666,8 +3691,8 @@ table {
       tr {
         td, th {
           font-size: 15px;
-          height: 40px;
-          padding: 0;
+          height: auto;
+          padding: 10px 0;
           width: 25%;
 
           &:last-child {
@@ -3753,6 +3778,27 @@ table {
       font-size: 15px;
       line-height: 17px;
       padding: 0;
+    }
+  }
+
+  .searchTerm {
+    margin-bottom: 20px;
+
+    a {
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 18px;
+      padding: 0;
+    }
+
+    .highlight {
+      background: #feffce;
     }
   }
 }
@@ -3917,6 +3963,25 @@ ul {
   border: 0;
   padding: 0;
   margin: 0;
+}
+
+#foundHolder {
+  margin-top: 35px;
+  margin-bottom: 30px;
+
+  h2 {
+    margin-bottom: 0;
+    line-height: 28px;
+    float: left;
+  }
+
+  input[type="text"] {
+    float: left;
+    margin-right: 5px;
+    width: 247px;
+    clear: none;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 768px) {

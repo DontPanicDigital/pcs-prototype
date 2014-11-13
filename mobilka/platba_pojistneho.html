@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Don't Panic, s.r.o.">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/control.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" media="screen" href="css/default.css" />
+
+        <title>Platba pojistného | Flexi pojištění mobilní verze</title>
+
+    </head>
+    <body>
+        <div id="anchor">&nbsp;</div>
+        <div id="main">
+
+            <div id="header">
+                <ul class="logos">
+                    <li><a href="/"><img src="images/logo.jpg" alt="logo"/></a></li>
+                    <li class="pcs"><a href="/"><img src="images/pcsLogo.jpg" alt="pcs logo"/></a></li>
+                </ul>
+
+                <a href="/prototyp/mobilka/" class="linkBack">zpět</a>
+                <div class="cleaner">&nbsp;</div>
+            </div> <!-- /header -->
+
+            <div class="container">
+                <div id="content">
+                    <h2>Platba pojistného</h2>
+
+                    <form action="/form" method="post">
+                        <div class="formRow">
+                            <label for="number">
+                                Zadejte prosím číslo vaší pojistné smlouvy
+                                pro zjištění údajů pro platbu
+                            </label>
+                            <input type="text" name="number" id="number" />
+                            <div class="cleaner">&nbsp;</div>
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit" name="submit" id="submit" class="mainButton" value="Vyhledat platební údaje" />
+                        </div>
+                        <div class="cleaner">&nbsp;</div>
+                    </form>
+
+                   <a href="#" class="fs15 mb30 dib">Zobrazit úplný seznam platebních údajů</a>
+
+                    <h3 class="blue">Možnosti platby</h3>
+                </div>
+            </div>
+
+            <ul class="linksArrow fs18">
+                <li>
+                    <a href="#">
+                        <span class="in">
+                            E-faktura
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="in">
+                            Inkaso z účtu
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="in">
+                            SIPO
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <h3 class="mb0">Jiný způsob platby</h3>
+                <span class="small">trvalý příkaz, převod z účtu, poštovní poukázka</span>
+
+                <div id="phone">
+                    <span class="in">
+                        Klientská linka:
+                        <span>956 777 222</span>
+                    </span>
+                </div>
+
+
+                <div id="mail">
+                    <span class="in">
+                        E-mail:<br />
+                        <a href="#">info@pojistovnacs.cz</a>
+                    </span>
+                </div>
+            </div>
+
+            <a href="/prototyp/mobilka/" class="linkBack mt30">zpět</a>
+
+            <div class="cleaner">&nbsp;</div>
+            <div class="container">
+                <a href="#anchor" class="otherLink toAnchor mt30">Zpět nahoru</a><br />
+                <a href="#" class="otherLink">Přejít na plnou verzi stránek</a>
+
+                <div id="copy">
+                    © Pojišťovna České spořitelny, a.s.,<br />
+                    Vienna Insurance Group
+                </div>
+            </div>
+        </div> <!-- /main -->
+    </body>
+</html>

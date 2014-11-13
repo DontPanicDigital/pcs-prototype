@@ -170,7 +170,7 @@
                         <form method="post" action="/form">
                             <div class="formRow">
                                 <div class="col first">
-                                    <label for="priceMortgage">Výše úvěru/hypotéky</label>
+                                    <label for="priceMortgage">Aktuální výše úvěru/hypotéky</label>
                                     <input type="text" name="priceMortgage" id="priceMortgage" value="2 000 000" />
                                     <span class="afterInput">Kč</span>
                                 </div>
@@ -205,9 +205,8 @@
                             </div>
 
                             <div id="monthlyPaymentAnchor" class="formRow mt50">
-                                <label for="monthPrice">Měsíční pojistné <span>(vaše platba za pojištění)</span></label>
-                                <input type="text" name="monthPrice" id="monthPrice" value="850" class="calculated" />
-                                <span class="afterInput">Kč</span>
+                                <label>Měsíční pojistné <span>(vaše platba za pojištění)</span></label>
+                                <span class="onlyNumber">800 Kč</span>
                                 <div class="cleaner">&nbsp;</div>
                             </div>
 
@@ -224,7 +223,7 @@
                                     </div>
                                     <p>
                                         Všechny částky můžete
-                                        upravit výše pojistnéhobude
+                                        upravit výše pojistného bude
                                         automaticky přepočítána.
                                     </p>
                                 </div> <!-- /helpBubble -->
@@ -247,7 +246,7 @@
 
                                 <div class="itemRow">
                                     <input type="checkbox" name="inv" id="inv" />
-                                    <label for="inv" class="twoRows">Invalidita &mdash; 3. stupeň<br /><span>s anuitně klesající pojistnou částkou</span></label>
+                                    <label for="inv" class="twoRows">Invalidita &mdash; 3. stupně<br /><span>s anuitně klesající pojistnou částkou</span></label>
                                     <input type="text" name="invInput" id="invInput" value="350 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <div class="cleaner">&nbsp;</div>
@@ -293,7 +292,7 @@
 
                                 <div class="itemRow">
                                     <input type="checkbox" name="inability" id="inability" />
-                                    <label for="inability">Trvalé následky úrazu &mdash; 0,5%</label>
+                                    <label for="inability">Trvalé následky úrazu &mdash; od 0,5%</label>
                                     <input type="text" name="inabilityInput" id="inabilityInput" value="0">
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
@@ -331,7 +330,8 @@
                                 </div>
                             </div>
 
-                            <h3 class="red">Kromě jistoty zajištění rodiny získáte</h3>
+                            <h3 class="red mb10">Kromě jistoty zajištění rodiny získáte</h3>
+                            <h4 class="mb30">Zdarma pojištění rizikových sportů na 30 dní za rok</h4>
 
                             <table class="w480">
                                 <tr>
