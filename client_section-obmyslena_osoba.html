@@ -47,7 +47,7 @@
                     </form>
                 </li>
                 <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
-                <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
+                <li><a href="/prototyp/client_section-zakladni_informace.html">email@email.cz</a></li>
             </ul>
         </div> <!-- /headerLogin -->
 
@@ -84,11 +84,11 @@
 
                 <div id="productInformation" class="mt20">
                     <ul class="newsLinks productNavigation">
-                        <li><a href="/prototyp/client_section-zakladni_informace.html"><span>Základní údaje</span></a></li>
-                        <!--<li><a href="/prototyp/client_section-smlouva_1.html" class="active"><span>Pojistné smlouvy</span></a></li>
+                        <li><a href="/prototyp/client_section-zakladni_informace.html"><span>Pojistné smlouvy</span></a></li>
+                        <!--<li><a href="/prototyp/client_section-pojistena_osoba.html"><span>Pojistné smlouvy</span></a></li>
                         <li><a href="/prototyp/client_section-platby.html"><span>Platby</span></a></li>
                         <li><a href="/prototyp/client_section-plneni.html"><span>Plnění</span></a></li>-->
-                        <li><a href="/prototyp/clients_rizikove_sporty.html"><span>Pojištění rizikových sportů</span></a></li>
+                        <li><a href="/prototyp/client_section-aktivace_pripojisteni.html"><span>Pojištění rizikových sportů</span></a></li>
                         <li><a href="/prototyp/#"><span>Zprávy PČS</span><span class="number">4</span></a></li>
                     </ul>
 
@@ -102,7 +102,10 @@
 
     <div class="container basicPadding">
         <h2 class="blue">FLEXI 29736827482</h2>
-        <h3 class="red">Úprava obyšlených osob</h3>
+        <h3 class="red mb10">Změna obyšlených osob</h3>
+        <p class="fs15 mb25">
+            Obmyšlená osoba je osoba určená v pojistné smlouvě, která obdrží pojistné plnění v případě úmrtí pojištěného.
+        </p>
         <table class="detailTable detailTable2">
             <tr>
                 <th>
@@ -121,6 +124,17 @@
                 </th>
                 <td>
                     Flexibilní životní pojištění
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    Platnost od
+                </th>
+                <td>
+                    <strong>
+                        28.2. 2005
+                    </strong>
                 </td>
             </tr>
 
@@ -179,8 +193,12 @@
                             Datum narození
                         </th>
 
+                        <th class="inputs3">
+                            Nový podíl
+                        </th>
+
                         <th>
-                            Podíl
+                            Aktuální podíl
                         </th>
                     </tr>
 
@@ -193,39 +211,13 @@
                             <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
                         </td>
 
-                        <td>
+                        <td class="inputs3">
                             <input type="text" name="input_3" id="input_3" class="w67" value="60" />
                             <span class="afterInput">%</span>
                         </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
-                        </td>
-
-                        <td class="inputs2">
-                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
-                        </td>
 
                         <td>
-                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
-                            <span class="afterInput">%</span>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
-                        </td>
-
-                        <td class="inputs2">
-                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
-                        </td>
-
-                        <td>
-                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
-                            <span class="afterInput">%</span>
+                            30%
                         </td>
                     </tr>
 
@@ -238,9 +230,13 @@
                             <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
                         </td>
 
-                        <td>
+                        <td class="inputs3">
                             <input type="text" name="input_3" id="input_3" class="w67" value="2" />
                             <span class="afterInput">%</span>
+                        </td>
+
+                        <td>
+                            20%
                         </td>
                     </tr>
 
@@ -253,9 +249,13 @@
                             <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
                         </td>
 
-                        <td>
+                        <td class="inputs3">
                             <input type="text" name="input_3" id="input_3" class="w67" value="2" />
                             <span class="afterInput">%</span>
+                        </td>
+
+                        <td>
+                            5%
                         </td>
                     </tr>
 
@@ -268,9 +268,57 @@
                             <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
                         </td>
 
-                        <td>
+                        <td class="inputs3">
                             <input type="text" name="input_3" id="input_3" class="w67" value="2" />
                             <span class="afterInput">%</span>
+                        </td>
+
+                        <td>
+                            12%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td class="inputs3">
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+
+                        <td>
+                            3%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="text" name="input_1" id="input_1" class="w177" value="Klotilda Zajištěná" />
+                        </td>
+
+                        <td class="inputs2">
+                            <input type="text" name="input_2" id="input_2" class="w127" value="11.11. 2011" />
+                        </td>
+
+                        <td class="inputs3">
+                            <input type="text" name="input_3" id="input_3" class="w67" value="2" />
+                            <span class="afterInput">%</span>
+                        </td>
+
+                        <td>
+                            42%
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">
+                            <a href="#">Přidat osobu</a>
                         </td>
                     </tr>
                 </table>
