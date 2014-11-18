@@ -65,6 +65,14 @@ p a:hover {
   position: relative;
   position: relative;
   min-height: 1px;
+
+  &.left {
+    padding-right: 40px;
+
+    h2 {
+      line-height: 32px;
+    }
+  }
 }
 
 .pb10 {
@@ -1036,7 +1044,6 @@ h4 {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    background: #fff;
     padding: 22px 21px 0;
     position: relative;
 
@@ -1056,9 +1063,10 @@ h4 {
     img {
       position: absolute;
       bottom: 0;
+      top: 0;
       left: 0;
       right: 0;
-      margin: 0 auto;
+      margin: auto;
     }
   }
 
@@ -1092,8 +1100,49 @@ h4 {
     }
 
     .branchImage {
-      width: 46px;
-      height: 41px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &.forms {
+      .branchItem {
+        padding-top: 30px;
+      }
+
+      .branchTitle {
+        font-size: 24px;
+        line-height: 28px;
+        min-height: 58px;
+        margin: 0 auto;
+        display: table;
+
+        span {
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+
+      .branchLink {
+        margin-top: 5px;
+      }
+
+      &.signpost {
+        .branchItem {
+          width: 50%;
+          margin: 0;
+          padding: 50px 0;
+
+          .branchTitle {
+            margin: 0 auto;
+          }
+        }
+
+        &.three {
+          .branchItem {
+            width: 33.3333%;
+          }
+        }
+      }
     }
   }
 
@@ -1611,10 +1660,12 @@ h4 {
     }
 
     ul {
-      margin: 5px 0;
+      margin: 10px 0;
 
       li {
-        background: url("../images/li2.png") no-repeat left 11px;
+        background: url("../images/li2.png") no-repeat left 7px;
+        font-size: 15px;
+        line-height: 18px;
       }
     }
   }
@@ -3093,14 +3144,25 @@ table {
     tr {
       td, th {
         &:first-child {
-          padding-left: 10px;
+          padding-left: 15px;
           font-weight: bold;
           padding-right: 10px;
         }
 
         &:last-child {
-          padding-right: 10px;
+          padding-right: 15px;
           text-align: right;
+        }
+      }
+    }
+  }
+
+  .forms {
+    tr {
+      td, th {
+        vertical-align: top;
+        &:last-child {
+          width: 25%;
         }
       }
     }
@@ -3799,6 +3861,19 @@ table {
 
     .highlight {
       background: #feffce;
+    }
+  }
+
+  .downloadLink {
+    font-size: 24px;
+    color: #ed1c24;
+    display: inline-block;
+    margin-bottom: 40px;
+
+    &:before {
+      content: url("../images/icoDownload.png");
+      float: left;
+      margin-right: 10px;
     }
   }
 }

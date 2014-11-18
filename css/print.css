@@ -1,5 +1,5 @@
-#header, #footer, #menu, .productBox, .subPage #content .helpBubble, #monthlyPayment {
-    display: none;
+#header, #footer, #menu, .productBox, .helpBubble, .otherText .linkArrow, #monthlyPayment, .icoInformation, .errorBox, #contactFormHolder, .linksHolder, .printDn, .moreBonusLink {
+    display: none !important;
 }
 
 body {
