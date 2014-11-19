@@ -3,3 +3,23 @@
     z-index: 500;
     background: transparent;
 }
+
+#needsNavigation, #branchHolder {
+    border: 1px solid #D0E7F7;
+}
+
+form input[type="text"], input[type="password"] {
+    padding-left: 5px;
+}
+
+#branchHolder.branch .branchItem, #branchHolder.branchHolder2.forms .branchItem {
+    width: 290px;
+}
+
+.signpost#branchHolder {
+    min-height: auto;
+}
+
+.signpost#branchHolder .branchItem {
+    width: 175px;
+}
