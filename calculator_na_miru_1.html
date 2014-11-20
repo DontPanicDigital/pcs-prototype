@@ -153,12 +153,6 @@
 <p>
     Nastavte si pojištění podle svých představ.
 </p>
-<br/>
-<p>
-    Jak na to? Zvolte si měsíční pojistné a kalkulačka vám vypočítá pojistné částky pro jednotlivá rizika. Nebo si naopak zvolte
-    pojistné částky u jednotlivých rizik a zjistíte výši měsíčního pojistného. Výpočet proběhne automaticky po zadání
-    příslušného údaje.
-</p>
 
 <div class="otherText">
     <a href="#" class="linkArrow mb20 showText">Více informací o pojištění</a>
@@ -214,7 +208,7 @@
 <div class="cleaner">&nbsp;</div>
 
 <div id="anchor">&nbsp;</div>
-<h3 class="red mt50">Pojistná částka <span>(nejvyšší možná částka, kterou vám pojišťovna vyplatí pokud nastane pojistná událost)</span></h3>
+<h3 class="red mt50">Pojistná částka <span>(nejvyšší možná částka, kterou vám pojišťovna vyplatí, pokud nastane pojistná událost)</span></h3>
 
 <div class="itemsHolder different">
     <div class="helpBubble hide">
@@ -232,7 +226,7 @@
     <div class="itemRow first">
         <input type="checkbox" name="death" id="death" />
         <label for="death">Smrt z jakýchkoliv příčin</label>
-        <input type="text" name="deathInput" id="deathInput" value="250 000"/>
+        <input type="text" name="deathInput" id="deathInput"/>
         <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -246,7 +240,7 @@
         <div class="itemCol">
             <input type="checkbox" name="inv" id="inv" />
             <label for="inv">Invalidita <span>3. stupně s klesající PČ</span></label>
-            <input type="text" name="invInput" id="invInput" value="350 000"/>
+            <input type="text" name="invInput" id="invInput" />
             <span class="afterInput">Kč jednorázově</span>
                                         <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                             <span class="infoBubble">
@@ -259,7 +253,7 @@
         <div class="itemCol">
             <input type="checkbox" name="inv2" id="inv2" />
             <label for="inv2">Invalidita <span>2. stupně s klesající PČ</span></label>
-            <input type="text" name="invInput2" id="invInput2" value="250 000"/>
+            <input type="text" name="invInput2" id="invInput2" />
             <span class="afterInput">Kč jednorázově</span>
             <div class="cleaner">&nbsp;</div>
         </div>
@@ -267,7 +261,7 @@
         <div class="itemCol last">
             <input type="checkbox" name="inv3" id="inv3" />
             <label for="inv3">Invalidita <span>1. stupně s klesající PČ</span></label>
-            <input type="text" name="invInput3" id="invInput3" value="300 000"/>
+            <input type="text" name="invInput3" id="invInput3" />
             <span class="afterInput">Kč jednorázově</span>
             <div class="cleaner">&nbsp;</div>
         </div>
@@ -277,7 +271,7 @@
     <div class="itemRow">
         <input type="checkbox" name="ill" id="ill" />
         <label for="ill">Velmi vážná onemocnění <span>&mdash; kompletní</span></label>
-        <input type="text" name="illInput" id="illInput" value="200 000"/>
+        <input type="text" name="illInput" id="illInput" />
         <span class="afterInput">Kč jednorázově</span>
         <div class="cleaner">&nbsp;</div>
     </div> <!-- /itemRow -->
@@ -285,7 +279,7 @@
     <div class="itemRow">
         <input type="checkbox" name="death2" id="death2" />
         <label for="death2">Smrt následkem úrazu</label>
-        <input type="text" name="deathInput2" id="deathInput2" value="200 000"/>
+        <input type="text" name="deathInput2" id="deathInput2" />
         <span class="afterInput">Kč jednorázově</span>
             <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                 <span class="infoBubble">
@@ -298,7 +292,7 @@
     <div class="itemRow">
         <input type="checkbox" name="incident" id="incident" />
         <label for="incident">Travalé následky úrazu &mdash; od 0,5%</label>
-        <input type="text" name="incidentInput" id="incident" value="500 000"/>
+        <input type="text" name="incidentInput" id="incident" />
         <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -311,7 +305,7 @@
     <div class="itemRow">
         <input type="checkbox" name="incident2" id="incident2" />
         <label for="incident2">Denní odškodné &mdash; úraz</label>
-        <input type="text" name="incidentInput2" id="incidentInput2" value="250"/>
+        <input type="text" name="incidentInput2" id="incidentInput2" />
         <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -324,7 +318,7 @@
     <div class="itemRow">
         <input type="checkbox" name="hosp" id="hosp" />
         <label for="hosp">Hospitalizace &mdash; úraz a nemoc</label>
-        <input type="text" name="hospInput" id="hospInput" value="250"/>
+        <input type="text" name="hospInput" id="hospInput" />
         <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -337,7 +331,7 @@
     <div class="itemRow">
         <input type="checkbox" name="work" id="work" />
         <label for="work">Pracovní neschopnost <span>&mdash; nemoc od 15. dne</span></label>
-        <input type="text" name="workInput" id="workInput" value="200"/>
+        <input type="text" name="workInput" id="workInput" />
         <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -353,14 +347,14 @@
 <div class="itemsHolder wBorder">
     <div class="itemRow">
         <label for="ill2">Velmi vážná onemocnění <span>&mdash; dítě</span></label>
-        <input type="text" name="ill2" id="ill2" value="200 000"/>
+        <input type="text" name="ill2" id="ill2" />
         <span class="afterInput">Kč jednorázově</span>
         <div class="cleaner">&nbsp;</div>
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
         <label for="incident3">Trvalé následky úrazu <span>&mdash; dítě</span></label>
-        <input type="text" name="incident3" id="incident3" value="500 000"/>
+        <input type="text" name="incident3" id="incident3" />
         <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -372,7 +366,7 @@
 
     <div class="itemRow">
         <label for="day">Denní odškodné <span>&mdash; dítě</span></label>
-        <input type="text" name="day" id="day" value="250"/>
+        <input type="text" name="day" id="day" />
         <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -384,7 +378,7 @@
 
     <div class="itemRow last">
         <label for="hosp2">Hospitalizace <span>&mdash; dítě</span></label>
-        <input type="text" name="hosp2" id="hosp2" value="250"/>
+        <input type="text" name="hosp2" id="hosp2" />
         <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
