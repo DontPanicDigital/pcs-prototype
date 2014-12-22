@@ -13,6 +13,12 @@ $(document).ready(function() {
         monthlyPaymentShow();
     }, 3000);
 
+
+    $('form input[type="text"]').each(function() {
+        var value = $(this).val();
+        $(this).after("<span class='valueInput'>"+value+"</span>");
+    });
+
     helpBubbleShow();
     checkedCheckboxes();
 
