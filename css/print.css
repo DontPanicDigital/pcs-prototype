@@ -33,6 +33,7 @@ form input[type="text"] {
     padding: 0;
     width: auto;
     float: none;
+    font-weight: bold;
 }
 
 form #showChildAge {
