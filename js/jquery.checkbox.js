@@ -65,8 +65,23 @@
 			/* Removing wrapper if already applied  */
 			if (ch.wrapper) ch.wrapper.remove();
 			
+			
+			var ga_category = null;
+            var ga_action = null;
+            var ga_label = null;
+			var data_ga_category = $(ch).data('ga-category');
+            var data_ga_action = $(ch).data('ga-action');
+            var data_ga_label = $(ch).data('ga-label');
+			
+			if((typeof data_ga_category !== 'undefined') && (typeof data_ga_action !== 'undefined') && (typeof data_ga_label !== 'undefined'))
+			{
+				ga_category = 'data-ga-category="'+data_ga_category+'"';
+                ga_action = 'data-ga-action="'+data_ga_action+'"';
+                ga_label = 'data-ga-label="'+data_ga_label+'"';
+			}
+            
 			/* Creating wrapper for checkbox and assigning "hover" event */
-			ch.wrapper = $('<span class="' + settings.cls + '"><span class="mark"><img src="' + settings.empty + '" /></span></span>');
+			ch.wrapper = $('<span class="' + settings.cls + '" '+ga_category+' '+ga_action+' '+ga_label+'><span class="mark"><img src="' + settings.empty + '" /></span></span>');
 			ch.wrapperInner = ch.wrapper.children('span:eq(0)');
 			ch.wrapper.hover(
 				function(e) { ch.wrapperInner.addClass(settings.cls + '-hover');CB(e); },
@@ -99,7 +114,7 @@
 				label.click(function(e) { $ch.trigger('click',[e]); CB(e); return false;});
 			}
 			ch.wrapper.click(function(e) { $ch.trigger('click',[e]); CB(e); return false;});
-			$ch.click(function(e) { CB(e); });
+			$ch.click(function(e) { CB(e); track_GA.prepare_data($(this)); });
 			$ch.bind('disable', function() { ch.wrapperInner.addClass(settings.cls+'-disabled');}).bind('enable', function() { ch.wrapperInner.removeClass(settings.cls+'-disabled');});
 			$ch.bind('check', function() { ch.wrapper.addClass(settings.cls+'-checked' );}).bind('uncheck', function() { ch.wrapper.removeClass(settings.cls+'-checked' );});
 			
@@ -115,6 +130,7 @@
 				ch.wrapper.addClass(settings.cls + '-checked');
 			if ( ch.disabled )
 				ch.wrapperInner.addClass(settings.cls + '-disabled');			
+				
 		});
 	}
 })(jQuery);

@@ -172,7 +172,7 @@
 
                     <h3>Základní údaje pro výpočet pojištění</h3>
 
-                    <div id="formHolder">
+                    <div id="formHolder" class="mortgage-calc">
                         <form method="post" action="/form">
                             <div class="formRow">
                                 <div class="col first">
@@ -234,7 +234,7 @@
                                     </p>
                                 </div> <!-- /helpBubble -->
                                 <div class="itemRow first">
-                                    <input type="checkbox" name="death" id="death" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="death" id="death" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="death" class="twoRows">Smrt z jakýchkoliv příčin<br /><span>s anuitně klesající pojistnou částkou</span></label>
                                     <input type="text" name="deathInput" id="deathInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="250 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
@@ -251,7 +251,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="inv" id="inv" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="inv" id="inv" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="inv" class="twoRows">Invalidita 3. stupně<br /><span>s anuitně klesající pojistnou částkou</span></label>
                                     <input type="text" name="invInput" id="invInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="350 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
@@ -259,7 +259,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="work" id="work" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="work" id="work" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="work" class="twoRows">Pracovní neschopnost<br /><span>úraz a nemoc od 29. dne</span></label>
                                     <input type="text" name="workInput" id="workInput"  data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý"value="200"/>
                                     <span class="afterInput">Kč/den</span>
@@ -276,7 +276,7 @@
 
                             <div class="itemsHolder different">
                                 <div class="itemRow first">
-                                    <input type="checkbox" name="injury" id="injury" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="injury" id="injury" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="injury">Smrt následkem úrazu</span></label>
                                     <input type="text" name="injuryInput" id="injuryInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                                     <span class="afterInput">Kč jednorázově</span>
@@ -289,7 +289,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="ill" id="ill" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="ill" id="ill" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="ill">Velmi vážná onemocnění <span>&mdash; kompletní</span></label>
                                     <input type="text" name="illInput" id="illInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0"/>
                                     <span class="afterInput">Kč jednorázově</span>
@@ -297,7 +297,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="inability" id="inability" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="inability" id="inability" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="inability">Trvalé následky úrazu &mdash; od 0,5 %</label>
                                     <input type="text" name="inabilityInput" id="inabilityInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                                     <span class="afterInput">Kč jednorázově</span>
@@ -310,7 +310,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="dayInjury" id="dayInjury" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="dayInjury" id="dayInjury" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="dayInjury">Denní odškodné &mdash; úraz</label>
                                     <input type="text" name="dayInjuryInput" id="dayInjuryInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                                     <span class="afterInput">Kč/den</span>
@@ -323,7 +323,7 @@
                                 </div>
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="hospit" id="hospit" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                                    <input type="checkbox" name="hospit" id="hospit" data-ga-action="click" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="hospit">Hospitalizace &mdash; úraz a nemoc</label>
                                     <input type="text" name="hospitInput" id="hospitInput" data-ga-action="change" data-ga-category="kalkulacka-hypoteka-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                                     <span class="afterInput">Kč/den</span>

@@ -184,7 +184,7 @@
 <!--pro nejlepší zajištění při <strong>platbě 1100 Kč měsíčně</strong>.-->
 <!--</p>-->
 
-<div id="formHolder">
+<div id="formHolder" class="bespoke-calc">
 <form method="post" action="/form">
 <div class="formRow">
     <label for="age">Váš věk</label>
@@ -231,7 +231,7 @@
     </div> <!-- /helpBubble -->
 
     <div class="itemRow first">
-        <input type="checkbox" name="death" id="death" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="death" id="death" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="death">Smrt z jakýchkoliv příčin</label>
         <input type="text" name="deathInput" id="deathInput" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč jednorázově</span>
@@ -245,7 +245,7 @@
 
     <div class="itemRow">
         <div class="itemCol">
-            <input type="checkbox" name="inv" id="inv" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+            <input type="checkbox" name="inv" id="inv" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
             <label for="inv">Invalidita <span>3. stupně s klesající PČ</span></label>
             <input type="text" name="invInput" id="invInput" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
             <span class="afterInput">Kč jednorázově</span>
@@ -258,7 +258,7 @@
         </div>
 
         <div class="itemCol">
-            <input type="checkbox" name="inv2" id="inv2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+            <input type="checkbox" name="inv2" id="inv2" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
             <label for="inv2">Invalidita <span>2. stupně s klesající PČ</span></label>
             <input type="text" name="invInput2" id="invInput2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
             <span class="afterInput">Kč jednorázově</span>
@@ -266,7 +266,7 @@
         </div>
 
         <div class="itemCol last">
-            <input type="checkbox" name="inv3" id="inv3" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+            <input type="checkbox" name="inv3" id="inv3" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
             <label for="inv3">Invalidita <span>1. stupně s klesající PČ</span></label>
             <input type="text" name="invInput3" id="invInput3" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
             <span class="afterInput">Kč jednorázově</span>
@@ -276,7 +276,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="ill" id="ill" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="ill" id="ill" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="ill">Velmi vážná onemocnění <span>&mdash; kompletní</span></label>
         <input type="text" name="illInput" id="illInput" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč jednorázově</span>
@@ -284,7 +284,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="death2" id="death2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="death2" id="death2" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="death2">Smrt následkem úrazu</label>
         <input type="text" name="deathInput2" id="deathInput2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč jednorázově</span>
@@ -297,7 +297,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="incident" id="incident" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="incident" id="incident" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="incident">Trvalé následky úrazu &mdash; od 0,5 %</label>
         <input type="text" name="incidentInput" id="incident" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč jednorázově</span>
@@ -310,7 +310,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="incident2" id="incident2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="incident2" id="incident2" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="incident2">Denní odškodné &mdash; úraz</label>
         <input type="text" name="incidentInput2" id="incidentInput2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč/den</span>
@@ -323,7 +323,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="hosp" id="hosp" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="hosp" id="hosp" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="hosp">Hospitalizace &mdash; úraz a nemoc</label>
         <input type="text" name="hospInput" id="hospInput" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč/den</span>
@@ -336,7 +336,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="work" id="work" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+        <input type="checkbox" name="work" id="work" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
         <label for="work">Pracovní neschopnost <span>&mdash; nemoc od 15. dne</span></label>
         <input type="text" name="workInput" id="workInput" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Úprava částek v polích - dospělý" />
         <span class="afterInput">Kč/den</span>
@@ -353,7 +353,7 @@
 
 <div class="itemsHolder wBorder">
     <div class="itemRow">
-        <input type="checkbox" name="vvo" id="vvo" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+        <input type="checkbox" name="vvo" id="vvo" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
         <label for="vvo">Velmi vážná onemocnění <span>&mdash; dítě</span></label>
         <input type="text" name="ill2" id="ill2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-i" data-ga-label="Úprava částek v polích - dítě" />
         <span class="afterInput">Kč jednorázově</span>
@@ -361,7 +361,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="tnu" id="tnu" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+        <input type="checkbox" name="tnu" id="tnu" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
         <label for="tnu">Trvalé následky úrazu <span>&mdash; dítě</span></label>
         <input type="text" name="incident3" id="incident3" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-i" data-ga-label="Úprava částek v polích - dítě" />
         <span class="afterInput">Kč jednorázově</span>
@@ -374,7 +374,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow">
-        <input type="checkbox" name="dod" id="dod" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+        <input type="checkbox" name="dod" id="dod" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
         <label for="dod">Denní odškodné <span>&mdash; dítě</span></label>
         <input type="text" name="day" id="day" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-i" data-ga-label="Úprava částek v polích - dítě" />
         <span class="afterInput">Kč/den</span>
@@ -387,7 +387,7 @@
     </div> <!-- /itemRow -->
 
     <div class="itemRow last">
-        <input type="checkbox" name="hosd" id="hosd" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+        <input type="checkbox" name="hosd" id="hosd" data-ga-action="click" data-ga-category="kalkulacka-namiru-step-ii" data-ga-label="Vyloučení rizika - dítě" />
         <label for="hosd">Hospitalizace <span>&mdash; dítě</span></label>
         <input type="text" name="hosp2" id="hosp2" data-ga-action="change" data-ga-category="kalkulacka-namiru-step-i" data-ga-label="Úprava částek v polích - dítě" />
         <span class="afterInput">Kč/den</span>

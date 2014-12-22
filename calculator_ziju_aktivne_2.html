@@ -185,7 +185,7 @@
         Ostatní položky se přepočítají automaticky. Formulář jsme pro vás vzorově převyplnili částkou <strong>400 Kč měsíčně</strong>.
     </p>
 
-    <div id="formHolder">
+    <div id="formHolder" class="active-calc">
         <form method="post" action="/form">
             <div class="formRow">
                 <label for="age">Váš věk</label>
@@ -227,7 +227,7 @@
                 </div> <!-- /helpBubble -->
 
                 <div class="itemRow first">
-                    <input type="checkbox" name="death" id="death" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                    <input type="checkbox" name="death" id="death" data-ga-action="click" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                     <label for="death">Smrt z jakýchkoliv příčin</label>
                     <input type="text" name="deathInput" id="deathInput" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="10 000">
                     <span class="afterInput">Kč jednorázově</span>
@@ -241,7 +241,7 @@
                 </div>
 
                 <div class="itemRow">
-                    <input type="checkbox" name="injury" id="injury" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                    <input type="checkbox" name="injury" id="injury" data-ga-action="click" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                     <label for="injury">Smrt následkem úrazu</span></label>
                     <input type="text" name="injuryInput" id="injuryInput" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                     <span class="afterInput">Kč jednorázově</span>
@@ -255,7 +255,7 @@
                 </div>
 
                 <div class="itemRow">
-                    <input type="checkbox" name="inability" id="inability" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                    <input type="checkbox" name="inability" id="inability" data-ga-action="click" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                     <label for="inability">Trvalé následky úrazu &mdash; od 0,5 %</label>
                     <input type="text" name="inabilityInput" id="inabilityInput" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                     <span class="afterInput">Kč jednorázově</span>
@@ -269,7 +269,7 @@
                 </div>
 
                 <div class="itemRow">
-                    <input type="checkbox" name="dayInjury" id="dayInjury" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                    <input type="checkbox" name="dayInjury" id="dayInjury" data-ga-action="click" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                     <label for="dayInjury">Denní odškodné &mdash; úraz</label>
                     <input type="text" name="dayInjuryInput" id="dayInjuryInput" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                     <span class="afterInput">Kč/den</span>
@@ -283,7 +283,7 @@
                 </div>
 
                 <div class="itemRow">
-                    <input type="checkbox" name="hospit" id="hospit" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
+                    <input type="checkbox" name="hospit" id="hospit" data-ga-action="click" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                     <label for="hospit">Hospitalizace &mdash; úraz a nemoc</label>
                     <input type="text" name="hospitInput" id="hospitInput" data-ga-action="change" data-ga-category="kalkulacka-zijuaktivne-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="0">
                     <span class="afterInput">Kč/den</span>
