@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.checkbox.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="js/ga.min.js"></script>
     <script type="text/javascript" src="js/control.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
@@ -38,7 +39,7 @@
                         <div class="campaignText">
                             <span>„</span>Jednoho dne skončí<br />
                             táta na lopatkách<span>“</span>
-                            <a href="/prototyp/" class="mainButton"><span>Proč se pojistit</span></a>
+                            <a href="/prototyp/" data-ga-action="click" data-ga-category="homepage" data-ga-label="Jednoho dne skončí táta na lopatkách" class="mainButton"><span>Proč se pojistit</span></a>
                         </div>
 
                         <a href="/prototyp/#" class="campaignPlay">
@@ -60,7 +61,7 @@
                         <div class="campaignText">
                             <span>„</span>Jednoho dne skončí<br />
                             táta na lopatkách<span>“</span>
-                            <a href="/prototyp/" class="mainButton"><span>Proč se pojistit</span></a>
+                            <a href="/prototyp/" data-ga-action="click" data-ga-category="homepage" data-ga-label="Jednoho dne skončí táta na lopatkách" class="mainButton"><span>Proč se pojistit</span></a>
                         </div>
 
                         <a href="/prototyp/#" class="campaignPlay">
@@ -92,11 +93,11 @@
                             <li>
                                 <form action="/search" method="post">
                                     <input type="text" name="search" />
-                                    <input type="submit" name="submit" id="submit" value="Najít" />
+                                    <input type="submit" name="submit" id="submit" value="Najít" data-ga-action="click" data-ga-category="homepage-2" data-ga-label="Vyhledat" />
                                 </form>
                             </li>
                             <li><a href="/prototyp/reporting_incident.html">Nahlásit pojistnou událost</a></li>
-                            <li><a href="/prototyp/client_section-prihlaseni.html">Klientská sekce - přihlášení</a></li>
+                            <li><a href="/prototyp/client_section-prihlaseni.html" data-ga-action="click" data-ga-category="homepage-2" data-ga-label="Přihlášení (hlavička)">Klientská sekce - přihlášení</a></li>
                         </ul>
                     </div> <!-- /headerLogin -->
 
@@ -133,7 +134,7 @@
             <div class="container">
                 <div id="needsNavigation">
 
-                    <a href="/prototyp/calculator_rodina_1.html" class="needBox first">
+                    <a href="/prototyp/calculator_rodina_1.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Chci zajistit rodinu" class="needBox first">
                         <span class="mainNeeds">
                             <span class="needImage">
                                 <img src="images/icoFamily.png" alt="family" />
@@ -159,7 +160,7 @@
                         <span class="divider">&nbsp;</span>
                     </a> <!-- /needBox -->
 
-                    <a href="/prototyp/calculator_hypoteka_1.html" class="needBox">
+                    <a href="/prototyp/calculator_hypoteka_1.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Mám hypotéku" class="needBox">
                         <span class="mainNeeds">
                             <span class="needImage">
                                 <img src="images/icoHouse.png" alt="house">
@@ -185,7 +186,7 @@
                         <span class="divider">&nbsp;</span>
                     </a>
 
-                    <a href="/prototyp/calculator_ziju_aktivne_1.html" class="needBox">
+                    <a href="/prototyp/calculator_ziju_aktivne_1.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Žiju aktivně" class="needBox">
                         <span class="mainNeeds">
                             <span class="needImage">
                                 <img src="images/icoRun.png" alt="active" />
@@ -210,7 +211,7 @@
                         <span class="divider">&nbsp;</span>
                     </a> <!-- /needBox -->
 
-                    <a href="/prototyp/calculator_dite_1.html" class="needBox last">
+                    <a href="/prototyp/calculator_dite_1.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Chci pojistit své dítě" class="needBox last">
                         <span class="mainNeeds">
                             <span class="needImage">
                                 <img src="images/icoChild.png" alt="child" />
@@ -240,7 +241,7 @@
                 <div class="infoBox">
                     <span>Sestavit si pojištění na míru</span>
                     <p>Máte vlastní představu, jak by měla vypadat ideální pojistka přesně pro vás? Sestavte si pojistku sami.
-                        <a href="/prototyp/calculator_na_miru_1.html">Spočítat pojištění</a></p>
+                    <a href="/prototyp/calculator_na_miru_1.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Spočítat pojištění na míru">Spočítat pojištění</a></p>
                 </div>
             </div> <!-- /container -->
 
@@ -282,7 +283,7 @@
                     </div>
                     <div class="cleaner">&nbsp;</div>
 
-                    <div id="ownFuse"><a href="/prototyp/client_section-prihlaseni.html">Má pojistka</a> (přihlášení do klientské sekce)</div>
+                    <div id="ownFuse"><a href="/prototyp/client_section-prihlaseni.html" data-ga-action="click" data-ga-category="homepage-2" data-ga-label="Klientská sekce">Má pojistka</a> (přihlášení do klientské sekce)</div>
                 </div>
                 <div id="shadowBottom">&nbsp;</div>
                 <div class="cleaner">&nbsp;</div>
@@ -304,7 +305,7 @@
 
                                 <input type="text" name="address" id="address" />
                                 <!--<input type="submit" name="subm" id="subm" class="mainButton h29" value="Vyhledat pobočku" />-->
-                                <a href="/prototyp/contact_point_search.html" class="mainButton h29"><span>Vyhledat pobočku</span></a>
+                                <a href="/prototyp/contact_point_search.html" data-ga-action="click" data-ga-category="homepage" data-ga-label="Vyhledat pobočku" class="mainButton h29"><span>Vyhledat pobočku</span></a>
                             </div>
                         </form>
                         <div class="cleaner">&nbsp;</div>
@@ -315,11 +316,25 @@
                 <div class="cleaner">&nbsp;</div>
             </div> <!-- /nearestBranch -->
 
-            <img src="images/map.jpg" alt="map" class="inCenter minMap" />
+            <div id="hpMap" data-ga-action="scroll" data-ga-scroll="160" data-ga-category="homepage" data-ga-label="mapa">
+                <img src="images/map.jpg" alt="map" class="inCenter minMap" />
+            </div> <!-- /hpMap -->
+
             <div id="footer">
 
             </div> <!-- /footer -->
         </div> <!-- /mainIn -->
     </div> <!-- /main -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-57808756-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>

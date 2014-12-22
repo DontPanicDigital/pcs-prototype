@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.checkbox.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="js/ga.min.js"></script>
     <script type="text/javascript" src="js/control.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
@@ -112,10 +113,10 @@
                 <tr>
                     <th colspan="3">
                         Životní pojištění, číslo smlouvy  5500242487
-                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" class="viewAll">Zobrazit celou smlouvu</a>
+                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení celé smlouvy" class="viewAll">Zobrazit celou smlouvu</a>
                     </th>
                     <th>
-                        <a href="#" class="viewMore">Zobrazit podrobnosti</a>
+                        <a data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení podrobností" class="viewMore">Zobrazit podrobnosti</a>
                     </th>
                 </tr>
 
@@ -136,7 +137,7 @@
                     </td>
 
                     <td class="fourthCol">
-                        <a href="#">Zobrazit výběry</a>
+                        <a href="#" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení výběrů">Zobrazit výběry</a>
                     </td>
                 </tr>
 
@@ -278,10 +279,10 @@
                 <tr>
                     <th colspan="3">
                         Životní pojištění, číslo smlouvy  5500242487
-                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" class="viewAll">Zobrazit celou smlouvu</a>
+                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení celé smlouvy" class="viewAll">Zobrazit celou smlouvu</a>
                     </th>
                     <th>
-                        <a href="#" class="viewMore">Zobrazit podrobnosti</a>
+                        <a data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení podrobností" class="viewMore">Zobrazit podrobnosti</a>
                     </th>
                 </tr>
 
@@ -302,7 +303,7 @@
                     </td>
 
                     <td class="fourthCol">
-                        <a href="#">Zobrazit výběry</a>
+                        <a href="#" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení výběrů">Zobrazit výběry</a>
                     </td>
                 </tr>
 
@@ -444,10 +445,10 @@
                 <tr>
                     <th colspan="3">
                         Životní pojištění, číslo smlouvy  5500242487
-                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" class="viewAll">Zobrazit celou smlouvu</a>
+                        <a href="/prototyp/client_section-pojistna_smlouva_detail.html" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení celé smlouvy" class="viewAll">Zobrazit celou smlouvu</a>
                     </th>
                     <th>
-                        <a href="#" class="viewMore">Zobrazit podrobnosti</a>
+                        <a data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení podrobností" class="viewMore">Zobrazit podrobnosti</a>
                     </th>
                 </tr>
 
@@ -468,7 +469,7 @@
                     </td>
 
                     <td class="fourthCol">
-                        <a href="#">Zobrazit výběry</a>
+                        <a href="#" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Zobrazení výběrů">Zobrazit výběry</a>
                     </td>
                 </tr>
 
@@ -612,7 +613,7 @@
                 Součástí vaší pojistky je pojištění rizikových sportů na 30* dní za kalendářní rok zdarma.<br />
                 Můžete si ho aktivovat přímo zde anebo <a href="#">přes SMS</a>.
             </p>
-            <a href="/prototyp/client_section-aktivace_pripojisteni.html" class="mainButton h29 mt20"><span>Aktivovat pojištění rizikových sportů</span></a>
+            <a href="/prototyp/client_section-aktivace_pripojisteni.html" data-ga-action="click" data-ga-category="ma-pojistka" data-ga-label="Aktivace RRS" class="mainButton h29 mt20"><span>Aktivovat pojištění rizikových sportů</span></a>
         </div> <!-- /productInfobox -->
 
     </div> <!-- /container -->
@@ -626,5 +627,15 @@
 </div>
 </div> <!-- /mainIn -->
 </div> <!-- /main -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57808756-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>

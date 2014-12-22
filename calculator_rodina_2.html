@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="js/jquery.checkbox.js"></script>
     <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+    <script type="text/javascript" src="js/ga.min.js"></script>
     <script type="text/javascript" src="js/control.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese' rel='stylesheet' type='text/css' />
@@ -155,7 +156,7 @@
                     </p>
 
                     <div class="otherText">
-                        <a href="#" class="linkArrow mb20 showText">Více informací o pojištění</a>
+                        <a data-ga-action="click" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Více informací o pojištění" class="linkArrow mb20 showText">Více informací o pojištění</a>
 
                         <div class="hideText">
                             <h3>Proč zvolit FLEXI životní pojištění</h3>
@@ -238,9 +239,9 @@
                                 </div> <!-- /helpBubble -->
 
                                 <div class="itemRow first">
-                                    <input type="checkbox" name="death" id="death" />
+                                    <input type="checkbox" name="death" id="death" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="death">Smrt z jakýchkoliv příčin</label>
-                                    <input type="text" name="deathInput" id="deathInput" value="250 000"/>
+                                    <input type="text" name="deathInput" id="deathInput" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="250 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -252,9 +253,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="death2" id="death2" />
+                                    <input type="checkbox" name="death2" id="death2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="death2">Smrt následkem úrazu</label>
-                                    <input type="text" name="deathInput2" id="deathInput2" value="200 000"/>
+                                    <input type="text" name="deathInput2" id="deathInput2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="200 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -267,9 +268,9 @@
 
                                 <div class="itemRow">
                                     <div class="itemCol">
-                                        <input type="checkbox" name="inv" id="inv" />
+                                        <input type="checkbox" name="inv" id="inv" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                         <label for="inv">Invalidita <span>3. stupně s klesající PČ</span></label>
-                                        <input type="text" name="invInput" id="invInput" value="350 000"/>
+                                        <input type="text" name="invInput" id="invInput" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="350 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                             <span class="infoBubble">
@@ -281,18 +282,18 @@
                                     </div>
 
                                     <div class="itemCol">
-                                        <input type="checkbox" name="inv2" id="inv2" checked="checked" />
+                                        <input type="checkbox" name="inv2" id="inv2" checked="checked" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                         <label for="inv2">Invalidita <span>2. stupně s klesající PČ</span></label>
-                                        <input type="text" name="invInput2" id="invInput2" value="250 000"/>
+                                        <input type="text" name="invInput2" id="invInput2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="250 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="inputInfo">&nbsp;</span>
                                         <div class="cleaner">&nbsp;</div>
                                     </div>
 
                                     <div class="itemCol last">
-                                        <input type="checkbox" name="inv3" id="inv3" />
+                                        <input type="checkbox" name="inv3" id="inv3" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                         <label for="inv3">Invalidita <span>1. stupně s klesající PČ</span></label>
-                                        <input type="text" name="invInput3" id="invInput3" value="300 000"/>
+                                        <input type="text" name="invInput3" id="invInput3" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="300 000"/>
                                         <span class="afterInput">Kč jednorázově</span>
                                         <span class="inputInfo">&nbsp;</span>
                                         <div class="cleaner">&nbsp;</div>
@@ -301,18 +302,18 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="ill" id="ill" />
+                                    <input type="checkbox" name="ill" id="ill" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="ill">Velmi vážná onemocnění <span>&mdash; kompletní</span></label>
-                                    <input type="text" name="illInput" id="illInput" value="200 000"/>
+                                    <input type="text" name="illInput" id="illInput" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="200 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="inputInfo">Pokryje výpadek vašeho příjmu na 12 měsíců</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow errorRow">
-                                    <input type="checkbox" name="incident" id="incident" checked="checked" />
+                                    <input type="checkbox" name="incident" id="incident" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" checked="checked" />
                                     <label for="incident">Trvalé následky úrazu &mdash; od 0,5 %</label>
-                                    <input type="text" name="incidentInput" id="incident" value="500 000"/>
+                                    <input type="text" name="incidentInput" id="incident" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="500 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -329,9 +330,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="incident2" id="incident2" />
+                                    <input type="checkbox" name="incident2" id="incident2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="incident2">Denní odškodné &mdash; úraz</label>
-                                    <input type="text" name="incidentInput2" id="incidentInput2" value="250"/>
+                                    <input type="text" name="incidentInput2" id="incidentInput2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="250"/>
                                     <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -343,9 +344,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="hosp" id="hosp" checked="checked" />
+                                    <input type="checkbox" name="hosp" id="hosp" checked="checked" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="hosp">Hospitalizace &mdash; úraz a nemoc</label>
-                                    <input type="text" name="hospInput" id="hospInput" value="250"/>
+                                    <input type="text" name="hospInput" id="hospInput" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="250"/>
                                     <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -357,9 +358,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <input type="checkbox" name="work" id="work" />
+                                    <input type="checkbox" name="work" id="work" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dospělý" />
                                     <label for="work">Pracovní neschopnost <span>&mdash; nemoc od 15. dne</span></label>
-                                    <input type="text" name="workInput" id="workInput" value="200"/>
+                                    <input type="text" name="workInput" id="workInput" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dospělý" value="200"/>
                                     <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -375,15 +376,17 @@
 
                             <div class="itemsHolder wBorder">
                                 <div class="itemRow">
-                                    <label for="ill2">Velmi vážná onemocnění <span>&mdash; dítě</span></label>
-                                    <input type="text" name="ill2" id="ill2" value="200 000"/>
+                                    <input type="checkbox" name="vvo" id="vvo" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+                                    <label for="vvo">Velmi vážná onemocnění <span>&mdash; dítě</span></label>
+                                    <input type="text" name="ill2" id="ill2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dítě" value="200 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <div class="cleaner">&nbsp;</div>
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <label for="incident3">Trvalé následky úrazu <span>&mdash; dítě</span></label>
-                                    <input type="text" name="incident3" id="incident3" value="500 000"/>
+                                    <input type="checkbox" name="tnu" id="tnu" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+                                    <label for="tnu">Trvalé následky úrazu <span>&mdash; dítě</span></label>
+                                    <input type="text" name="incident3" id="incident3" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dítě" value="500 000"/>
                                     <span class="afterInput">Kč jednorázově</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -394,8 +397,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow">
-                                    <label for="day">Denní odškodné <span>&mdash; dítě</span></label>
-                                    <input type="text" name="day" id="day" value="250"/>
+                                    <input type="checkbox" name="dod" id="dod" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+                                    <label for="dod">Denní odškodné <span>&mdash; dítě</span></label>
+                                    <input type="text" name="day" id="day" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dítě" value="250"/>
                                     <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -406,8 +410,9 @@
                                 </div> <!-- /itemRow -->
 
                                 <div class="itemRow last">
-                                    <label for="hosp2">Hospitalizace <span>&mdash; dítě</span></label>
-                                    <input type="text" name="hosp2" id="hosp2" value="250"/>
+                                    <input type="checkbox" name="hosd" id="hosd" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vyloučení rizika - dítě" />
+                                    <label for="hosd">Hospitalizace <span>&mdash; dítě</span></label>
+                                    <input type="text" name="hosp2" id="hosp2" data-ga-action="change" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Úprava částek v polích - dítě" value="250"/>
                                     <span class="afterInput">Kč/den</span>
                                     <span class="icoInformation"><img src="images/icoInformation.png" alt="information" />
                                         <span class="infoBubble">
@@ -428,7 +433,7 @@
                                     </th>
                                     <td>75 066 Kč</td>
                                     <td class="moreLink">
-                                        <a href="#" class="moreBonusLink fs15 fwn">Více informací</a>
+                                        <a class="moreBonusLink fs15 fwn" data-ga-action="click" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Více informací v sekci bonusy">Více informací</a>
                                     </td>
                                 </tr>
 
@@ -500,15 +505,15 @@
 
                                 <div class="submit">
                                     <!--<input type="submit" name="submit" id="submit" class="mainButton" value="Spočítat pojištění" />-->
-                                    <a href="calculator_rodina_3.html" class="mainButton">
+                                    <a href="calculator_rodina_3.html" data-ga-action="click" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Odeslání kontaktního formuláře" class="mainButton">
                                         <span>Odeslat žádost o schůzku</span>
                                     </a>
                                 </div>
                             </div> <!-- /contactFormHolder -->
 
                             <div class="linksHolder">
-                                <a href="#" onClick="window.print();return false" class="print">Vytisknout toto pojištění</a>
-                                <a href="/prototyp/#" class="pdf">Stáhnout jako PDF</a>
+                                <a href="#" onClick="window.print();return false" class="print" data-ga-action="click" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Vytištění kalkulace">Vytisknout toto pojištění</a>
+                                <a href="/prototyp/#" class="pdf" data-ga-action="click" data-ga-category="kalkulacka-rodina-step-ii" data-ga-label="Stažení PDF kalkulace">Stáhnout jako PDF</a>
                             </div>
 
                         </form>
@@ -525,5 +530,16 @@
             </div>
         </div> <!-- /mainIn -->
     </div> <!-- /main -->
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-57808756-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>

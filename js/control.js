@@ -156,8 +156,6 @@ function showOtherText() {
             $(this).parent().find('.hideText').addClass('hide');
             $(this).removeClass('arrowUp');
         }
-
-        return false;
     });
 }
 
@@ -197,7 +195,7 @@ function showBounus() {
             $(this).closest('table').find('.moreBonus').addClass('hide');
             $(this).removeClass('arrowUp');
         }
-        return false;
+
     });
 }
 
@@ -216,7 +214,6 @@ function showDetail() {
             $(this).text('Zobrazit podrobnosti');
             $(this).closest('table').find('.detail').addClass('hide');
         }
-        return false;
     });
 }
 
