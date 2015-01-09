@@ -190,6 +190,13 @@ a:hover {
     margin-top: 40px;
 }
 
+#phone .phoneNumber {
+    display: inline-block;
+    font-weight: 600;
+    color: #0062b7;
+    clear: both;
+}
+
 #phone .in {
     display: table-cell;
     line-height: 21px;
@@ -261,6 +268,11 @@ h2 {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 0;
+}
+
+h2.headLine {
+    line-height: 25px;
+    color: #0062b7;
 }
 
 h3 {
