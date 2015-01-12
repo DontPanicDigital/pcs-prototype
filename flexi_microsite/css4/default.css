@@ -85,6 +85,7 @@ form input[type="submit"] {
   margin-top: 20px;
   height: 45px;
   font-weight: 600;
+  cursor: pointer;
 }
 form a {
   color: #ed1c24;
