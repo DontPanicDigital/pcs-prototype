@@ -1,0 +1,276 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic&subset=latin,latin-ext,vietnamese);
+
+@gray: #424548;
+@blue: #096abf;
+@red: #ed1c24;
+@white: #ffffff;
+
+.boxSizing {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.position (@pos, @l: auto, @t: auto, @r: auto, @b: auto) {
+	position: @pos;
+	left: @l;
+	top: @t;
+	right: @r;
+	bottom: @b;
+}
+.roundedCorners(@r: 5px) {
+	-webkit-border-radius: @r;
+	-moz-border-radius: @r;
+	border-radius: @r;
+}
+.h(@h: 0) {
+	height: @h;
+}
+.w(@w: 0) {
+	width: @w;
+}
+
+// This is mobileFirst stylesheet. Watch out for desktop stylesheet @ desktop.less
+
+html, body, ul, li, input, textarea, form, p, h1, h2, h3, h4 {
+	padding: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+* {
+	.boxSizing;
+}
+h2 {
+	font-size: 36px;
+	line-height: 40px;
+	margin-bottom: 35px;
+}
+h3 {
+	font-size: 24px;
+	color: @blue;
+}
+ul {
+	list-style: none;
+	margin-bottom: 60px;
+}
+li {
+	background: transparent url('../images4/li.png') 2px 7px no-repeat;
+	padding: 0 0 5px 14px;
+}
+p {
+	margin-bottom: 25px;
+}
+a {
+	img {
+		border: 0;
+	}
+}
+img {
+	max-width: 100%;
+	.h(auto);
+}
+form {
+	.roundedCorners();
+	background-color: #e5f5fd;
+	border: 1px solid #d0e7f7;
+	padding: 16px;
+
+	.fl {
+		float: none;
+	}
+	input, label {
+		.w(100%);
+		display: block;
+	}
+	label {
+		margin-bottom: 10px;
+	}
+	input {
+		.h(30px);
+		.roundedCorners();
+		border: 1px solid #c6d5e3;
+		margin-bottom: 20px;
+		&[type="submit"] {
+			margin-top: 20px;
+			.h(45px);
+			font-weight: 600;
+		}
+	}
+	a {
+		color: @red;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.rules {
+		input, label {
+			.w(auto);
+			.h(auto);
+			display: inline;
+		}
+		input {
+			margin: 0 10px 0 0;
+			.position(relative, auto, -2px);
+		}
+	}
+}
+.btn {
+	.roundedCorners();
+	.dib;
+	.w(100%);
+	margin-bottom: 25px;
+	text-align: center;
+	text-decoration: none;
+	padding: 12px 30px;
+	&--red {
+		background-color: @red;
+		color: @white;
+		&:hover {
+			background-color: @red - 33;
+		}
+	}
+}
+
+#bodyHolder {
+	background-color: #f1fafe;
+	padding-bottom: 85px;
+	border-bottom: 1px solid #daeaf5;
+}
+
+.centering {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.header {
+	padding-top: 13px;
+	margin-bottom: 35px;
+}
+.logo {
+	span {
+		.position(absolute, auto, -200px);
+	}
+}
+.pcsLogo {
+	margin: 35px 0 0 31px;
+}
+.visual {
+	.btn {
+		font-size: 24px;
+	}
+	img {
+		margin-top: 25px;
+	}
+}
+.content {
+	margin-top: 90px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.font {
+	&--blue {
+		color: @blue;
+	}
+	&--red {
+		color: @red;
+	}
+}
+.dib {
+	display: inline-block;
+}
+.footer {
+	background: transparent url('../images4/bg_footer.png') center 0 no-repeat;
+	padding-top: 25px;
+
+	.fl, .fr {
+		color: @blue;
+		float: none;
+		text-align: center;
+
+		span {
+			.dib;
+		}
+	}
+	.fl {
+		a {
+			color: @blue;
+		}
+	}
+	.fr {
+		p {
+			font-size: 16px;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.btn {
+		.w(auto);
+	}
+    form {
+	    input {
+		    .w(327px);
+		    margin-right: 20px;
+
+		    &[type="submit"] {
+			    .w(auto);
+			    padding: 0 30px;
+		    }
+	    }
+	    .fl {
+		    .fl;
+
+		    input {
+			    .w(206px);
+		    }
+	    }
+    }
+    .footer {
+	    .fl {
+		    text-align: left;
+		    .fl;
+	    }
+	    .fr {
+		    text-align: right;
+		    .fr;
+	    }
+
+	    span {
+		    padding-right: 30px;
+	    }
+    }
+}
+
+@media (min-width: 992px) {
+	.centering {
+		.w(960px);
+		padding: 0;
+		&.footer {
+			padding-top: 25px;
+		}
+	}
+	.logo {
+		margin-left: -20px;
+	}
+	.visual {
+		position: relative;
+		img {
+			.position(absolute, 365px, 60px);
+			margin: 0;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
