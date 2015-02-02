@@ -1,4 +1,4 @@
-#header, #footer, #menu, .productBox, .helpBubble, input, .otherText .linkArrow, #monthlyPayment, .icoInformation, .errorBox, #contactFormHolder, .linksHolder, .printDn, .moreBonusLink {
+#header, #footer, #menu, #breadcrumb, #chooseProduct, img.inCenter, .award, .helpBubble, .loginBox, .subPage #content .newsLinks, input, .bx-wrapper, .bx-viewport, #nearestBranch, #hpMap, .otherText .linkArrow, #monthlyPayment, .icoInformation, .errorBox, #contactFormHolder, .linksHolder, .printDn, .moreBonusLink {
     display: none !important;
 }
 
@@ -10,7 +10,11 @@ body {
     color: #424548;
 }
 
-form input[type="text"] {
+.productBox {
+    margin-bottom: 30px;
+}
+
+form input[type="text"], form textarea {
     border: 0;
     width: auto;
     margin: 0;
@@ -19,7 +23,6 @@ form input[type="text"] {
     height: auto;
     background: none;
     font-weight: bold;
-    display: inline;
     clear: none;
     text-indent: 0;
     text-align: left;
@@ -101,4 +104,112 @@ table.w480 tr th {
     display: block;
     margin: 0 0 0 303px;
     padding: 0;
+}
+
+#needsNavigation .needBox, #branchHolder .branchItem {
+    display: block;
+    width: auto;
+    padding: 0;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+#needsNavigation .needBox .needTitle, #branchHolder .branchTitle {
+    display: block;
+    text-decoration: underline;
+}
+
+#needsNavigation .needBox .needText, #branchHolder .address {
+    clear: both;
+    text-decoration: none;
+}
+
+#needsNavigation .needBox .needImage, #needsNavigation .needBox .mainNeedsHover, .cleaner, #needsNavigation .needBox .needLink, #branchHolder .branchImage, #branchHolder .branchLink {
+    display: none;
+}
+
+.col-half.left .ulDefault {
+    margin-bottom: 30px;
+}
+
+.col-half.left .tip {
+    margin-bottom: 30px;
+}
+
+.subPage #content .tip .tipTitle {
+    margin: 0 0 20px;
+    padding: 0;
+    height: 0;
+}
+
+.subPage #content .boxBorder .boxTitle, .subPage #content .boxBorder p, .subPage #content .moreAboutProduct .moreBox .moreIn .title, .subPage #content .moreAboutProduct .moreBox .moreIn p {
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+.subPage #content .boxBorder .subBox, .subPage #content .moreAboutProduct .moreBox .moreIn, .subPage #content .moreAboutProduct .links {
+    margin-bottom: 30px;
+}
+
+#content .tableHolder tr th, #content .tableHolder tr td {
+    text-align: left;
+}
+
+ul.links, ul.ulDefault, .ulBlank {
+    padding-left: 25px;
+}
+
+.productInfobox {
+    margin-bottom: 20px;
+}
+
+.title, .subtitle {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.productInfobox p {
+    margin: 0;
+    padding: 0;
+}
+
+.productBox .productBoxIn #productInformation form .formTitle {
+    display: block;
+    width: 100%;
+}
+
+.productBox .productBoxIn #productInformation form .mainButton {
+    margin: 0;
+}
+
+.subPage #content .tableHolder .products tr td.firstCol, .subPage #content .tableHolder .products tr th.firstCol, .subPage #content .tableHolder .products tr td.secondCol, .subPage #content .tableHolder .products tr th.secondCol, .subPage #content .tableHolder .products tr td.thirdCol, .subPage #content .tableHolder .products tr th.thirdCol, .subPage #content .tableHolder .products tr td.fourthCol, .subPage #content .tableHolder .products tr th.fourthCol {
+    display: block;
+}
+
+.subPage #content .tableHolder .products tr td .tableBox.second .label, .subPage #content .tableHolder .products tr th .tableBox.second .label {
+    display: inline-block;
+    clear: both;
+    float: left;
+}
+
+.subPage #content .tableHolder .products tr td .tableBox.second strong, .subPage #content .tableHolder .products tr th .tableBox.second strong {
+    float: left;
+}
+
+.subPage #content .tableHolder .products tr td a, .subPage #content .tableHolder .products tr th a {
+    display: none;
+}
+
+.subPage #content .detailTable tr th, .subPage #content .detailTable tr td {
+    text-align: left;
+}
+
+table.legalInfo td, table.legalInfo th {
+    text-align: left;
+}
+
+.contactRight {
+    float: none;
+    margin-top: 10px;
+    clear: both;
 }
