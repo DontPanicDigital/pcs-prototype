@@ -2259,9 +2259,8 @@ form {
       }
     }
 
-    .jquery-checkbox {
+    label {
       clear: both;
-      margin-bottom: 20px;
     }
   }
 
@@ -2516,10 +2515,6 @@ form {
     -moz-border-radius: 6px;
 
     label {
-      padding-left: 0;
-    }
-
-    .jquery-checkbox {
       margin-left: 15px;
     }
   }
@@ -3223,21 +3218,17 @@ table {
         }
 
         .radios {
-          .jquery-radio {
-            float: left;
-            clear: none;
-
-            &.jquery-radio-checked + label {
-              font-weight: bold;
-            }
-          }
-
           label {
             float: left;
+            clear: none;
             font-size: 18px;
             color: #424548;
             font-weight: normal;
             margin-right: 30px;
+          }
+
+          input[type="radio"]:checked + label {
+            font-weight: bold;
           }
         }
       }
@@ -4208,6 +4199,60 @@ ul {
         }
       }
     }
+  }
+}
+
+input[type="checkbox"], input[type="radio"] {
+  padding: 0;
+  display: none;
+
+  & + label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+
+input[type="checkbox"] {
+  & + label:before {
+    content: "";
+    background: url("../images/checkbox.png") no-repeat center top;
+    display: inline-block;
+    width: 17px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+  &:checked + label:before {
+    background: url("../images/checkbox.png") no-repeat center bottom;
+  }
+}
+
+input[type="radio"] {
+  & + label:before {
+    content: "";
+    background: url("../images/radio.png") no-repeat center top;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+
+  &:checked + label:before {
+    background: url("../images/radio.png") no-repeat center bottom;
+  }
+}
+
+.radios {
+  label {
+    clear: both;
   }
 }
 
